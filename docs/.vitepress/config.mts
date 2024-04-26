@@ -4,18 +4,11 @@ import { defineConfig } from 'vitepress'
 // @ts-ignore
 export default defineConfig({
   head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
-  title: "爱做梦的皮皮檬",
+  title: "爱做梦的皮皮檬  🧙",
   description: "knowledge magician",
   lastUpdated: true,
   themeConfig: {
     logo: '/logo.png',
-
-    lastUpdated: {
-      text: '最后更新于',
-      formatOptions: {
-        forceLocale:true
-      }
-    },
 
     nav: [
       { text: 'Home', link: '/' },
@@ -116,10 +109,13 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/clefairy-w/clefairy-wiki' }
     ],
 
-
+    editLink: {
+      pattern: '',
+      text: ''
+    },
 
     footer: {
       message: 'Released under the MIT License.',

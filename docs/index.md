@@ -2,7 +2,7 @@
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
-lastUpdated: 'Last Updated'
+lastUpdated: '最后更新'
 
 hero:
   name: "爱做梦的皮皮檬"
@@ -14,7 +14,7 @@ hero:
       link: /md/guide/markdown-examples
     - theme: alt
       text: GitHub
-      link: https://github.com/vuejs/vitepress
+      link: https://github.com/clefairy-w/clefairy-wiki
   image:
     src: /magician.png
     alt: 知识魔法师
