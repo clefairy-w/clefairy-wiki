@@ -1,6 +1,6 @@
-- [x] [1049.最后一块石头的重量 II](https://leetcode.cn/problems/last-stone-weight-ii/)
-- [x] [494.目标和](https://leetcode.cn/problems/target-sum/)
-- [x] [474.一和零](https://leetcode.cn/problems/ones-and-zeroes/)
+-  [1049.最后一块石头的重量 II](https://leetcode.cn/problems/last-stone-weight-ii/)
+-  [494.目标和](https://leetcode.cn/problems/target-sum/)
+-  [474.一和零](https://leetcode.cn/problems/ones-and-zeroes/)
 
 ----
 

@@ -1,7 +1,7 @@
-- [ ] [242. 有效的字母异位词](https://leetcode.cn/problems/valid-anagram/)
-- [ ] [349. 两个数组的交集](https://leetcode.cn/problems/intersection-of-two-arrays/)
-- [ ] [202. 快乐数](https://leetcode.cn/problems/happy-number/)
-- [ ] [1. 两数之和](https://leetcode.cn/problems/two-sum/)
+-  [242. 有效的字母异位词](https://leetcode.cn/problems/valid-anagram/)
+-  [349. 两个数组的交集](https://leetcode.cn/problems/intersection-of-two-arrays/)
+-  [202. 快乐数](https://leetcode.cn/problems/happy-number/)
+-  [1. 两数之和](https://leetcode.cn/problems/two-sum/)
 
 -----
 

@@ -1,6 +1,6 @@
-- [x] [300. 最长递增子序列](https://leetcode.cn/problems/longest-increasing-subsequence/)
-- [x] [674. 最长连续递增序列](https://leetcode.cn/problems/longest-continuous-increasing-subsequence/)
-- [x] [718. 最长重复子数组](https://leetcode.cn/problems/maximum-length-of-repeated-subarray/)
+-  [300. 最长递增子序列](https://leetcode.cn/problems/longest-increasing-subsequence/)
+-  [674. 最长连续递增序列](https://leetcode.cn/problems/longest-continuous-increasing-subsequence/)
+-  [718. 最长重复子数组](https://leetcode.cn/problems/maximum-length-of-repeated-subarray/)
 
 ----
 

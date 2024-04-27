@@ -1,6 +1,6 @@
-- [x] [239. 滑动窗口最大值](https://leetcode.cn/problems/sliding-window-maximum/)
+-  [239. 滑动窗口最大值](https://leetcode.cn/problems/sliding-window-maximum/)
 
-- [x] [347. 前 K 个高频元素](https://leetcode.cn/problems/top-k-frequent-elements/)
+-  [347. 前 K 个高频元素](https://leetcode.cn/problems/top-k-frequent-elements/)
 
 ----
 

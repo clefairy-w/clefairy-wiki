@@ -1,5 +1,5 @@
-- [x] [216. 组合总和 III](https://leetcode.cn/problems/combination-sum-iii/)
-- [x] [17. 电话号码的字母组合](https://leetcode.cn/problems/letter-combinations-of-a-phone-number/)
+-  [216. 组合总和 III](https://leetcode.cn/problems/combination-sum-iii/)
+-  [17. 电话号码的字母组合](https://leetcode.cn/problems/letter-combinations-of-a-phone-number/)
 
 ----
 

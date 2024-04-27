@@ -1,6 +1,6 @@
-- [x] [496. 下一个更大元素 I](https://leetcode.cn/problems/next-greater-element-i/)
-- [x] [503. 下一个更大元素 II](https://leetcode.cn/problems/next-greater-element-ii/)
-- [x] [2487. 从链表中移除节点](https://leetcode.cn/problems/remove-nodes-from-linked-list/)
+-  [496. 下一个更大元素 I](https://leetcode.cn/problems/next-greater-element-i/)
+-  [503. 下一个更大元素 II](https://leetcode.cn/problems/next-greater-element-ii/)
+-  [2487. 从链表中移除节点](https://leetcode.cn/problems/remove-nodes-from-linked-list/)
 
 ----
 

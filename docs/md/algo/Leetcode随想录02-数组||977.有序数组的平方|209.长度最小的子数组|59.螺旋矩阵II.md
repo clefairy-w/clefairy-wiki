@@ -1,6 +1,6 @@
-- [x] [977. 有序数组的平方](https://leetcode.cn/problems/squares-of-a-sorted-array/)
-- [x] [209. 长度最小的子数组](https://leetcode.cn/problems/minimum-size-subarray-sum/)
-- [x] [59. 螺旋矩阵 II](https://leetcode.cn/problems/spiral-matrix-ii/)
+-  [977. 有序数组的平方](https://leetcode.cn/problems/squares-of-a-sorted-array/)
+-  [209. 长度最小的子数组](https://leetcode.cn/problems/minimum-size-subarray-sum/)
+-  [59. 螺旋矩阵 II](https://leetcode.cn/problems/spiral-matrix-ii/)
 
 -----
 

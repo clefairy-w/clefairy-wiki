@@ -1,6 +1,6 @@
-- [x] [206. 反转链表](https://leetcode.cn/problems/reverse-linked-list/)
-- [x] [707. 设计链表](https://leetcode.cn/problems/design-linked-list/)
-- [x] [203. 移除链表元素](https://leetcode.cn/problems/remove-linked-list-elements/)
+-  [206. 反转链表](https://leetcode.cn/problems/reverse-linked-list/)
+-  [707. 设计链表](https://leetcode.cn/problems/design-linked-list/)
+-  [203. 移除链表元素](https://leetcode.cn/problems/remove-linked-list-elements/)
 
 ----
 

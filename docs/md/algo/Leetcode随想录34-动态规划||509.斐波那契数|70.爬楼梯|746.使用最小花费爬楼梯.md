@@ -1,6 +1,6 @@
-- [x] [509.斐波那契数](https://leetcode.cn/problems/fibonacci-number/)
-- [x] [70.爬楼梯](https://leetcode.cn/problems/climbing-stairs/)
-- [x] [746.使用最小花费爬楼梯](https://leetcode.cn/problems/min-cost-climbing-stairs/)
+-  [509.斐波那契数](https://leetcode.cn/problems/fibonacci-number/)
+-  [70.爬楼梯](https://leetcode.cn/problems/climbing-stairs/)
+-  [746.使用最小花费爬楼梯](https://leetcode.cn/problems/min-cost-climbing-stairs/)
 
 ----
 

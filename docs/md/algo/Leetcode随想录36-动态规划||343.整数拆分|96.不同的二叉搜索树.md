@@ -1,5 +1,5 @@
-- [x] [343. 整数拆分](https://leetcode.cn/problems/integer-break/)
-- [x] [96. 不同的二叉搜索树](https://leetcode.cn/problems/unique-binary-search-trees/)
+-  [343. 整数拆分](https://leetcode.cn/problems/integer-break/)
+-  [96. 不同的二叉搜索树](https://leetcode.cn/problems/unique-binary-search-trees/)
 
 ----
 

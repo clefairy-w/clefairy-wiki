@@ -1,8 +1,8 @@
-- [ ] [513. 找树左下角的值](https://leetcode.cn/problems/find-bottom-left-tree-value/)
-- [ ] [112. 路径总和](https://leetcode.cn/problems/path-sum/)
-- [ ] [113. 路径总和 II](https://leetcode.cn/problems/path-sum-ii/)
-- [ ] [105. 从前序与中序遍历序列构造二叉树](https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
-- [ ] [106. 从中序与后序遍历序列构造二叉树](https://leetcode.cn/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)
+-  [513. 找树左下角的值](https://leetcode.cn/problems/find-bottom-left-tree-value/)
+-  [112. 路径总和](https://leetcode.cn/problems/path-sum/)
+-  [113. 路径总和 II](https://leetcode.cn/problems/path-sum-ii/)
+-  [105. 从前序与中序遍历序列构造二叉树](https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/)
+-  [106. 从中序与后序遍历序列构造二叉树](https://leetcode.cn/problems/construct-binary-tree-from-inorder-and-postorder-traversal/)
 
 -----
 

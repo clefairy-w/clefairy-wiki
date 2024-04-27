@@ -1,5 +1,5 @@
-- [ ] [232. 用栈实现队列](https://leetcode.cn/problems/implement-queue-using-stacks/)
-- [ ] [225. 用队列实现栈](https://leetcode.cn/problems/implement-stack-using-queues/)
+-  [232. 用栈实现队列](https://leetcode.cn/problems/implement-queue-using-stacks/)
+-  [225. 用队列实现栈](https://leetcode.cn/problems/implement-stack-using-queues/)
 
 ----
 

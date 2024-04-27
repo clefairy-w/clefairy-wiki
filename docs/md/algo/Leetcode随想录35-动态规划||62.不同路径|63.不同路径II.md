@@ -1,6 +1,6 @@
-- [x] [62.不同路径](https://leetcode.cn/problems/unique-paths/)
+-  [62.不同路径](https://leetcode.cn/problems/unique-paths/)
 
-- [x] [63.不同路径 II](https://leetcode.cn/problems/unique-paths-ii/)
+-  [63.不同路径 II](https://leetcode.cn/problems/unique-paths-ii/)
 
 ----
 

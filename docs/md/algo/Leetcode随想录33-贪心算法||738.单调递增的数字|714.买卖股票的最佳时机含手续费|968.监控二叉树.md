@@ -1,6 +1,6 @@
-- [x] [738. 单调递增的数字](https://leetcode.cn/problems/monotone-increasing-digits/)
-- [x] [714. 买卖股票的最佳时机含手续费](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)
-- [x] [968. 监控二叉树](https://leetcode.cn/problems/binary-tree-cameras/)
+-  [738. 单调递增的数字](https://leetcode.cn/problems/monotone-increasing-digits/)
+-  [714. 买卖股票的最佳时机含手续费](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/)
+-  [968. 监控二叉树](https://leetcode.cn/problems/binary-tree-cameras/)
 
 ----
 

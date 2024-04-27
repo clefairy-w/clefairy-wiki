@@ -1,4 +1,4 @@
-- [x] [139.单词拆分](https://leetcode.cn/problems/word-break/)
+-  [139.单词拆分](https://leetcode.cn/problems/word-break/)
 
 ----
 

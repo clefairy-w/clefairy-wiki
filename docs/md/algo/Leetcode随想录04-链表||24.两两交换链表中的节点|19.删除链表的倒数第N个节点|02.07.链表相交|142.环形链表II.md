@@ -1,7 +1,7 @@
-- [x] [24. 两两交换链表中的节点](https://leetcode.cn/problems/swap-nodes-in-pairs/)
-- [x] [19. 删除链表的倒数第 N 个结点](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/)
-- [x] [面试题 02.07. 链表相交](https://leetcode.cn/problems/intersection-of-two-linked-lists-lcci/)
-- [x] [142. 环形链表 II](https://leetcode.cn/problems/linked-list-cycle-ii/)
+-  [24. 两两交换链表中的节点](https://leetcode.cn/problems/swap-nodes-in-pairs/)
+-  [19. 删除链表的倒数第 N 个结点](https://leetcode.cn/problems/remove-nth-node-from-end-of-list/)
+-  [面试题 02.07. 链表相交](https://leetcode.cn/problems/intersection-of-two-linked-lists-lcci/)
+-  [142. 环形链表 II](https://leetcode.cn/problems/linked-list-cycle-ii/)
 
 ----
 

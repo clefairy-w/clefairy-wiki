@@ -1,6 +1,6 @@
-- [ ] [332. 重新安排行程](https://leetcode.cn/problems/reconstruct-itinerary/)
-- [ ] [51. N 皇后](https://leetcode.cn/problems/n-queens/)
-- [ ] [37. 解数独](https://leetcode.cn/problems/sudoku-solver/)
+-  [332. 重新安排行程](https://leetcode.cn/problems/reconstruct-itinerary/)
+-  [51. N 皇后](https://leetcode.cn/problems/n-queens/)
+-  [37. 解数独](https://leetcode.cn/problems/sudoku-solver/)
 
 ----
 

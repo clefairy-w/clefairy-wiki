@@ -1,5 +1,5 @@
-- [x] [583. 两个字符串的删除操作](https://leetcode.cn/problems/delete-operation-for-two-strings/)
-- [x] [72. 编辑距离](https://leetcode.cn/problems/edit-distance/)
+-  [583. 两个字符串的删除操作](https://leetcode.cn/problems/delete-operation-for-two-strings/)
+-  [72. 编辑距离](https://leetcode.cn/problems/edit-distance/)
 
 ----
 

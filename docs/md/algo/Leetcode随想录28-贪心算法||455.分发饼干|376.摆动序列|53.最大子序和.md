@@ -1,6 +1,6 @@
-- [x] [455. 分发饼干](https://leetcode.cn/problems/assign-cookies/)
-- [x] [376. 摆动序列](https://leetcode.cn/problems/wiggle-subsequence/)
-- [x] [53. 最大子数组和](https://leetcode.cn/problems/maximum-subarray/)
+-  [455. 分发饼干](https://leetcode.cn/problems/assign-cookies/)
+-  [376. 摆动序列](https://leetcode.cn/problems/wiggle-subsequence/)
+-  [53. 最大子数组和](https://leetcode.cn/problems/maximum-subarray/)
 
 -----
 

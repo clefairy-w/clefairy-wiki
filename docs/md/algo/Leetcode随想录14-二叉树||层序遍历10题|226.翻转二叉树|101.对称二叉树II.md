@@ -1,6 +1,6 @@
-- [x] [226. 翻转二叉树](https://leetcode.cn/problems/invert-binary-tree/)
+-  [226. 翻转二叉树](https://leetcode.cn/problems/invert-binary-tree/)
 
-- [x] [101. 对称二叉树](https://leetcode.cn/problems/symmetric-tree/)
+-  [101. 对称二叉树](https://leetcode.cn/problems/symmetric-tree/)
 
 -----
 

@@ -1,5 +1,5 @@
-- [x] [392. 判断子序列](https://leetcode.cn/problems/is-subsequence/)
-- [x] [115. 不同的子序列](https://leetcode.cn/problems/distinct-subsequences/)
+-  [392. 判断子序列](https://leetcode.cn/problems/is-subsequence/)
+-  [115. 不同的子序列](https://leetcode.cn/problems/distinct-subsequences/)
 
 -----
 

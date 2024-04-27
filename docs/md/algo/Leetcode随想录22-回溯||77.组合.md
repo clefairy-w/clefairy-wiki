@@ -1,4 +1,4 @@
-- [x] [77. 组合](https://leetcode.cn/problems/combinations/)
+-  [77. 组合](https://leetcode.cn/problems/combinations/)
 
 ----
 

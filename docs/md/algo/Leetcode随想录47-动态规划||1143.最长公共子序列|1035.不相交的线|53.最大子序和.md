@@ -1,6 +1,6 @@
-- [x] [1143. 最长公共子序列](https://leetcode.cn/problems/longest-common-subsequence/)
-- [x] [1035. 不相交的线](https://leetcode.cn/problems/uncrossed-lines/)
-- [x] [53. 最大子数组和](https://leetcode.cn/problems/maximum-subarray/)
+-  [1143. 最长公共子序列](https://leetcode.cn/problems/longest-common-subsequence/)
+-  [1035. 不相交的线](https://leetcode.cn/problems/uncrossed-lines/)
+-  [53. 最大子数组和](https://leetcode.cn/problems/maximum-subarray/)
 
 ----
 

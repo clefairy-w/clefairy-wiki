@@ -1,6 +1,6 @@
-- [x] [1005. K 次取反后最大化的数组和](https://leetcode.cn/problems/maximize-sum-of-array-after-k-negations/)
-- [x] [134. 加油站](https://leetcode.cn/problems/gas-station/)
-- [x] [135. 分发糖果](https://leetcode.cn/problems/candy/)
+-  [1005. K 次取反后最大化的数组和](https://leetcode.cn/problems/maximize-sum-of-array-after-k-negations/)
+-  [134. 加油站](https://leetcode.cn/problems/gas-station/)
+-  [135. 分发糖果](https://leetcode.cn/problems/candy/)
 
 -----
 

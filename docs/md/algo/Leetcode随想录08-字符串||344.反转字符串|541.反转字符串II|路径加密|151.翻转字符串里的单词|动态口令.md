@@ -1,8 +1,8 @@
-- [x] [344. 反转字符串](https://leetcode.cn/problems/reverse-string/)
-- [x] [541. 反转字符串 II](https://leetcode.cn/problems/reverse-string-ii/)
-- [x] [151. 反转字符串中的单词](https://leetcode.cn/problems/reverse-words-in-a-string/)
-- [x] [LCR 122. 路径加密](https://leetcode.cn/problems/ti-huan-kong-ge-lcof/)
-- [x] [LCR 182. 动态口令](https://leetcode.cn/problems/zuo-xuan-zhuan-zi-fu-chuan-lcof/)
+-  [344. 反转字符串](https://leetcode.cn/problems/reverse-string/)
+-  [541. 反转字符串 II](https://leetcode.cn/problems/reverse-string-ii/)
+-  [151. 反转字符串中的单词](https://leetcode.cn/problems/reverse-words-in-a-string/)
+-  [LCR 122. 路径加密](https://leetcode.cn/problems/ti-huan-kong-ge-lcof/)
+-  [LCR 182. 动态口令](https://leetcode.cn/problems/zuo-xuan-zhuan-zi-fu-chuan-lcof/)
 
 ----
 

@@ -1,5 +1,5 @@
-- [x] [28. 找出字符串中第一个匹配项的下标](https://leetcode.cn/problems/find-the-index-of-the-first-occurrence-in-a-string/)
-- [ ] [459. 重复的子字符串](https://leetcode.cn/problems/repeated-substring-pattern/)
+-  [28. 找出字符串中第一个匹配项的下标](https://leetcode.cn/problems/find-the-index-of-the-first-occurrence-in-a-string/)
+-  [459. 重复的子字符串](https://leetcode.cn/problems/repeated-substring-pattern/)
 
 ----
 

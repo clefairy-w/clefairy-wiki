@@ -1,6 +1,6 @@
-- [x] 70.爬楼梯(进阶)
-- [x] [322. 零钱兑换](https://leetcode.cn/problems/coin-change/)
-- [x] 279.完全平方数
+-  70.爬楼梯(进阶)
+-  [322. 零钱兑换](https://leetcode.cn/problems/coin-change/)
+-  279.完全平方数
 
 ----
 

@@ -1,6 +1,6 @@
-- [ ] [491. 非递减子序列](https://leetcode.cn/problems/non-decreasing-subsequences/)
-- [ ] [46. 全排列](https://leetcode.cn/problems/permutations/)
-- [ ] [47. 全排列 II](https://leetcode.cn/problems/permutations-ii/)
+-  [491. 非递减子序列](https://leetcode.cn/problems/non-decreasing-subsequences/)
+-  [46. 全排列](https://leetcode.cn/problems/permutations/)
+-  [47. 全排列 II](https://leetcode.cn/problems/permutations-ii/)
 
 -----
 

@@ -1,6 +1,6 @@
-- [x] [518. 零钱兑换 II](https://leetcode.cn/problems/coin-change-ii/)
+-  [518. 零钱兑换 II](https://leetcode.cn/problems/coin-change-ii/)
 
-- [x] [377. 组合总和 Ⅳ](https://leetcode.cn/problems/combination-sum-iv/)
+-  [377. 组合总和 Ⅳ](https://leetcode.cn/problems/combination-sum-iv/)
 
 ----
 

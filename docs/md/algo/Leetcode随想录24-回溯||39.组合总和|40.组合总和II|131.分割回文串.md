@@ -1,6 +1,6 @@
-- [ ] [39. 组合总和](https://leetcode.cn/problems/combination-sum/)
-- [ ] [40. 组合总和 II](https://leetcode.cn/problems/combination-sum-ii/)
-- [ ] [131. 分割回文串](https://leetcode.cn/problems/palindrome-partitioning/)
+-  [39. 组合总和](https://leetcode.cn/problems/combination-sum/)
+-  [40. 组合总和 II](https://leetcode.cn/problems/combination-sum-ii/)
+-  [131. 分割回文串](https://leetcode.cn/problems/palindrome-partitioning/)
 
 ----
 

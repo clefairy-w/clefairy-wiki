@@ -1,6 +1,6 @@
-- [x] [198. 打家劫舍](https://leetcode.cn/problems/house-robber/)
-- [x] [213. 打家劫舍 II](https://leetcode.cn/problems/house-robber-ii/)
-- [x] [337. 打家劫舍 III](https://leetcode.cn/problems/house-robber-iii/)
+-  [198. 打家劫舍](https://leetcode.cn/problems/house-robber/)
+-  [213. 打家劫舍 II](https://leetcode.cn/problems/house-robber-ii/)
+-  [337. 打家劫舍 III](https://leetcode.cn/problems/house-robber-iii/)
 
 ----
 

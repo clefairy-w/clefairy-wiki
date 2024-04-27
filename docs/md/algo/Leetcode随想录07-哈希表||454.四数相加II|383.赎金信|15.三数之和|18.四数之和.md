@@ -1,7 +1,7 @@
-- [ ] [454. 四数相加 II](https://leetcode.cn/problems/4sum-ii/)
-- [ ] [383. 赎金信](https://leetcode.cn/problems/ransom-note/)
-- [ ] [15. 三数之和](https://leetcode.cn/problems/3sum/)
-- [ ] [18. 四数之和](https://leetcode.cn/problems/4sum/)
+-  [454. 四数相加 II](https://leetcode.cn/problems/4sum-ii/)
+-  [383. 赎金信](https://leetcode.cn/problems/ransom-note/)
+-  [15. 三数之和](https://leetcode.cn/problems/3sum/)
+-  [18. 四数之和](https://leetcode.cn/problems/4sum/)
 
 ----
 

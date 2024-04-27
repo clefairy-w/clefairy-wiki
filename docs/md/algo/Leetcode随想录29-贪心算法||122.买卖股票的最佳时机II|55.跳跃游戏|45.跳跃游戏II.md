@@ -1,6 +1,6 @@
-- [x] [122. 买卖股票的最佳时机 II](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/)
-- [x] [55. 跳跃游戏](https://leetcode.cn/problems/jump-game/)
-- [x] [45. 跳跃游戏 II](https://leetcode.cn/problems/jump-game-ii/)
+-  [122. 买卖股票的最佳时机 II](https://leetcode.cn/problems/best-time-to-buy-and-sell-stock-ii/)
+-  [55. 跳跃游戏](https://leetcode.cn/problems/jump-game/)
+-  [45. 跳跃游戏 II](https://leetcode.cn/problems/jump-game-ii/)
 
 ----
 

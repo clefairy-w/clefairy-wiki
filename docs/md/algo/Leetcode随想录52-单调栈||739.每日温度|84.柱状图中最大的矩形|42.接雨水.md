@@ -1,6 +1,6 @@
-- [x] [739. 每日温度](https://leetcode.cn/problems/daily-temperatures/)
-- [x] [42. 接雨水](https://leetcode.cn/problems/trapping-rain-water/)
-- [x] [84. 柱状图中最大的矩形](https://leetcode.cn/problems/largest-rectangle-in-histogram/)
+-  [739. 每日温度](https://leetcode.cn/problems/daily-temperatures/)
+-  [42. 接雨水](https://leetcode.cn/problems/trapping-rain-water/)
+-  [84. 柱状图中最大的矩形](https://leetcode.cn/problems/largest-rectangle-in-histogram/)
 
 ----
 

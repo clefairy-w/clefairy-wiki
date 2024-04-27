@@ -1,6 +1,6 @@
-- [x] [647. 回文子串](https://leetcode.cn/problems/palindromic-substrings/)
-- [x] [516. 最长回文子序列](https://leetcode.cn/problems/longest-palindromic-subsequence/)
-- [x] [5. 最长回文子串](https://leetcode.cn/problems/longest-palindromic-substring/)
+-  [647. 回文子串](https://leetcode.cn/problems/palindromic-substrings/)
+-  [516. 最长回文子序列](https://leetcode.cn/problems/longest-palindromic-subsequence/)
+-  [5. 最长回文子串](https://leetcode.cn/problems/longest-palindromic-substring/)
 
 -----
 
