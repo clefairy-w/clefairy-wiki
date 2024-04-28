@@ -43,6 +43,7 @@ const nav:DefaultTheme.NavItem[] = [
         text: '框架与组件',
         items: [
             { text: 'SpringBoot', link: '#' },
+            { text: 'Mybatis', link: '#' },
             { text: 'Redis', link: '#' },
             { text: 'MySQL', link: '#' },
             { text: 'RabbitMQ', link: '#' },

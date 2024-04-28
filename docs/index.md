@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: 开始魔法 →
-      link: /md/guide/markdown-examples
+      link: /md/guide/guide
     - theme: alt
       text: GitHub
       link: https://github.com/clefairy-w/clefairy-wiki
