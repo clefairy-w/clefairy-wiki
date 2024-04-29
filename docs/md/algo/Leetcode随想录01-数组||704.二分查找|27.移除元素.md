@@ -30,10 +30,6 @@
 
 ​	由于每次查找都将范围缩小了一半，则时间复杂度为O(log*n*)
 
-​	⭐️ <u>图示示例：</u>
-
-<img src="/Users/lemon.w/docs/Lemmer Wiki Doc/数据结构与算法/images/01-二分查找.png" alt="01-二分查找" style="zoom:30%;" />
-
 ###### 704.3 Java版本
 
 ```java
