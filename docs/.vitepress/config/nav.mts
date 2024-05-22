@@ -50,7 +50,7 @@ const nav:DefaultTheme.NavItem[] = [
             { text: 'Spring Cloud', link: '/md/frame/spring-cloud/01-guide' },
             { text: 'Mybatis', link: '/md/frame/mybatis/01-开篇词' },
             { text: 'Netty', link: '/md/frame/netty/01-开篇词' },
-            { text: 'Dubbo', link: '/md/frame/dubbo/01-开篇词' },
+            // { text: 'Dubbo', link: '/md/frame/dubbo/01-开篇词' },
             // { text: 'JUnit', link: '#' },
         ]
     },
@@ -91,7 +91,7 @@ const nav:DefaultTheme.NavItem[] = [
             { text: 'Prometheus', link: '#' },
         ]
     },
-    // { text: '经验日志', link: '#' },
+    { text: '经验日志', link: '/md/exp-log/02-OpenEuler安装Docker和踩坑分析' },
     // { text: '阅读日志', link: '#' }
 ]
 export default nav

@@ -18,6 +18,7 @@ const sidebar: DefaultTheme.Sidebar = {
     '/md/frame/dubbo': generateDubboSidebar(),
     '/md/frame/netty': generateNettySidebar(),
     '/md/frame/mybatis': generateMybatisSidebar(),
+    'md/exp-log/': generateExpLogSidebar(),
 
 }
 
@@ -576,10 +577,10 @@ function generateSpringCloudSidebar(){
             items: [
                 {text: '概览', link: '/md/frame/spring-cloud/01-guide'},
                 {text: 'Spring Cloud Config', link: '/md/frame/spring-cloud/02-Spring Cloud Config'},
-                {text: 'Spring Cloud Bus', link: '/md/frame/spring-cloud/03-Spring Cloud Bus'},
                 {text: 'Spring Cloud Alibaba', link: '/md/frame/spring-cloud/04-Spring Cloud Alibaba'},
                 {text: 'Spring Cloud Gateway', link: '/md/frame/spring-cloud/05-Spring Cloud Gateway'},
                 {text: 'Spring Cloud OpenFeign', link: '/md/frame/spring-cloud/06-Spring Cloud OpenFeign'},
+                {text: 'Spring Cloud Bus', link: '/md/frame/spring-cloud/03-Spring Cloud Bus'},
                 {text: 'Spring Cloud Consul', link: '/md/frame/spring-cloud/07-Spring Cloud Consul'},
                 {text: 'Spring Cloud Security', link: '/md/frame/spring-cloud/08-Spring Cloud Security'},
             ]
@@ -591,6 +592,7 @@ function generateDubboSidebar(){
     return [
         {
             text: 'Dubbo',
+            collapsed: false,
             items: [
                 {text: '概览', link: '/md/frame/dubbo/01-开篇词.md'},
                 {text: '入门使用', link: '/md/frame/dubbo/02-入门使用.md'},
@@ -634,6 +636,18 @@ function generateMybatisSidebar(){
                 {text: '动态SQL', link: '/md/frame/mybatis/04-动态SQL'},
                 {text: 'SQL语句构建器', link: '/md/frame/mybatis/05-SQL语句构建器'},
                 {text: '缓存', link: '/md/frame/mybatis/06-缓存'},
+            ]
+        }
+    ]
+}
+
+function generateExpLogSidebar(){
+    return [
+        {
+            text: '经验日志',
+            collapsed: false,
+            items: [
+                {text: 'OpenEuler安装Docker', link: '/md/exp-log/02-OpenEuler安装Docker和踩坑分析'},
             ]
         }
     ]
