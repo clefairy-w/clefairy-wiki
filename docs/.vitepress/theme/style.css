@@ -265,3 +265,7 @@ a.VPLink[href='#']{
 .vp-doc img{
     border-radius: 5px;
 }
+
+.VPLastUpdated {
+    font-size: 12px !important;
+}

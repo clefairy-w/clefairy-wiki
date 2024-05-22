@@ -13,6 +13,15 @@ export default defineConfig({
   themeConfig: {
     logo: '/logo.png',
 
+    lastUpdated: {
+      text: '最后更新'
+    },
+
+    editLink: {
+      pattern: '/',
+      text:'爱做梦的皮皮檬'
+    },
+
     outline: {
       level: 'deep',
       label: '本页目录'
@@ -26,10 +35,7 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/clefairy-w/clefairy-wiki' }
     ],
 
-    editLink: {
-      pattern: '',
-      text: ''
-    },
+
 
     footer: {
       copyright: '基于 MIT 许可发布 | Copyright © 2019-present 爱做梦的皮皮檬 🧙 ｜ <a href="https://beian.miit.gov.cn">陕ICP备17020172号-2</a >'
