@@ -8,35 +8,17 @@ const iconText = (name, logo, logoColor, label, labelColor) => {
 const sidebar: DefaultTheme.Sidebar = {
     '/md/network': generateNetworkSidebar(),
     '/md/algo': generateDataStructureAndAlgoSidebar(),
-    '/md/design-pattern': generateDesignPattern(),
-    '/md/distributed-system': [
-        {
-            text: '分布式',
-            items: [
-                {text: 'Markdown Examples', link: '/guide/markdown-examples'},
-                {text: 'Runtime API Examples', link: '/api-examples'}
-            ]
-        },
-    ],
-    '/md/load-balance': [
-        {
-            text: '负载均衡',
-            items: [
-                {text: 'Markdown Examples', link: '/guide/markdown-examples'},
-                {text: 'Runtime API Examples', link: '/api-examples'}
-            ]
-        },
-    ],
-    '/md/java': [
-        {
-            text: 'Java',
-            items: [
-                {text: 'Java基础知识', link: '/md/java/Java基础知识'},
-                {text: 'Java集合', link: '/md/java/Java集合'},
-                {text: 'Java并发', link: '/md/java/Java并发'},
-            ]
-        },
-    ],
+    '/md/os': generateOSSideBar(),
+    '/md/design-pattern': generateDesignPatternSidebar(),
+    '/md/distributed-system': generateDistributedSystemSidebar(),
+    '/md/load-balance': generateLoadBalanceSidebar(),
+    '/md/java': generateJavaSidebar(),
+    '/md/frame/spring-boot': generateSpringBootSidebar(),
+    '/md/frame/spring-cloud': generateSpringCloudSidebar(),
+    '/md/frame/dubbo': generateDubboSidebar(),
+    '/md/frame/netty': generateNettySidebar(),
+    '/md/frame/mybatis': generateMybatisSidebar(),
+
 }
 
 // network sidebar
@@ -45,8 +27,10 @@ function generateNetworkSidebar() {
         {
             text: '网络',
             items: [
-                {text: 'Markdown Examples', link: '/network/markdown-examples'},
-                {text: 'Runtime API Examples', link: '/api-examples'}
+                {text: '网络体系结构模型', link: '/md/network/01-网络体系结构模型.md'},
+                {text: '应用层', link: '/md/network/02-应用层.md'},
+                {text: '传输层', link: '/md/network/03-传输层.md'},
+                {text: '网络层', link: '/md/network/04-网络层.md'},
             ]
         }]
 }
@@ -346,7 +330,21 @@ function generateDataStructureAndAlgoSidebar() {
     ]
 }
 
-function generateDesignPattern() {
+function generateOSSideBar(){
+    return [
+        {
+            text: '操作系统',
+            items: [
+                {text: '操作系统结构', link: '/md/os/01-开篇词.md'},
+                {text: '进程与线程', link: '/md/os/02-进程与线程.md'},
+                {text: '内存管理', link: '/md/os/03-内存管理.md'},
+                // {text: '文件管理', link: '/md/os/04-文件管理.md'},
+                // {text: 'I/O管理', link: '/md/os/05-IO管理.md'},
+            ]
+        }]
+}
+
+function generateDesignPatternSidebar() {
     return [
         {
             text: iconText('设计模式', 'textpattern','FFDA44', 'Design_Pattern', 'Grey'),
@@ -465,6 +463,179 @@ function generateDesignPattern() {
                 },
             ]
         },
+    ]
+}
+
+function generateLoadBalanceSidebar(){
+    return [
+        {
+            text: '负载均衡',
+            items: [
+                {text: '负载均衡模型', link: '/md/load-balance/负载均衡模型.md'},
+                {text: '负载均衡算法', link: '/md/load-balance/负载均衡算法.md'}
+            ]
+
+        }
+    ]
+}
+
+function generateDistributedSystemSidebar(){
+    return [
+        {
+            text: '分布式',
+            items: [
+                {text: 'CAP原则', link: '/md/distributed-system/CAP原则.md'},
+                {text: '分布式事务', link: '/md/distributed-system/分布式事务.md'},
+                {text: '分布式锁', link: '/md/distributed-system/分布式锁.md'},
+                {text: '分布式一致性算法', link: '/md/distributed-system/一致性算法.md'}
+            ]
+        }
+    ]
+}
+
+function generateJavaSidebar(){
+    return [
+        {
+            text: iconText('Java', 'OpenJDK', 'FFF', 'Java','F78C40'),
+
+            items: [
+                {
+                    text: 'Java基础',
+                    collapsed: true,
+                    items: [
+                        {text:'基础',link: '/md/java/Java基础/01-基础.md'},
+                        {text:'面向对象编程',link: '/md/java/Java基础/02-面向对象编程.md'},
+                        {text:'异常处理',link: '/md/java/Java基础/03-异常处理.md'},
+                        {text:'日志与断言',link: '/md/java/Java基础/04-日志与断言.md'},
+                        {text:'Array',link: '/md/java/Java基础/05-Arrays.md'},
+                        {text:'List',link: '/md/java/Java基础/06-List.md'},
+                        {text:'Queue',link: '/md/java/Java基础/07-Queue.md'},
+                        {text:'Map',link: '/md/java/Java基础/08-Map.md'},
+                        {text:'Set',link: '/md/java/Java基础/09-Set.md'},
+                        {text:'I/O',link: '/md/java/Java基础/10-IO.md'},
+                        // {text:'Lambda表达式',link: '/md/java/Java基础/11-lambda表达式.md'},
+                        // {text:'Java新特性(8|17)',link: '/md/java/Java基础/12-新特性.md'},
+
+                    ]
+                },
+                {
+                    text: 'Java并发',
+                    collapsed: true,
+                    items: [
+                        {text: '线程', link: '/md/java/Java并发/01-线程.md'},
+                        {text: '线程池', link: '/md/java/Java并发/08-线程池.md'},
+                        {text:'volatile',link: '/md/java/Java并发/02-volatile.md'},
+                        {text:'synchronized',link: '/md/java/Java并发/03-synchronized.md'},
+                        {text:'CAS',link: '/md/java/Java并发/05-CAS.md'},
+                        {text:'AQS',link: '/md/java/Java并发/06-AQS.md'},
+                        {text:'JUC中的锁',link: '/md/java/Java并发/04-JUC中的锁.md'},
+                        {text:'并发容器',link: '/md/java/Java并发/07-并发容器.md'},
+                    ]
+                },
+                {
+                    text: 'JVM',
+                    collapsed: true,
+                    items: [
+                        {text:'内存结构',link: '/md/java/JVM/01-内存结构.md'},
+                        {text:'垃圾收集',link: '/md/java/JVM/02-垃圾收集.md'},
+                        {text:'性能监控与调优',link: '/md/java/JVM/04-性能监控与调优.md'},
+                        {text:'字节码与类加载',link: '/md/java/JVM/03-字节码与类加载.md'},
+                    ]
+                },
+            ]
+        }
+    ]
+}
+
+function generateSpringBootSidebar(){
+    return [
+        {
+            // https://img.shields.io/badge/-Spring%20Boot-6DB33F?logo=Spring-Boot&logoColor=FFF
+            // https://springdoc.cn/spring-boot/index.html
+            text: iconText('Spring Boot', 'Spring-Boot', 'FFF', 'Spring%20Boot','6DB33F'),
+            items: [
+                // {text: '简单入门', link: '/md/frame/spring-boot/01-简单入门'},
+                // {text: '使用Spring Boot', link: '/md/frame/spring-boot/02-使用Spring Boot'},
+                {text: '核心特性', link: '/md/frame/spring-boot/03-核心特性'},
+                {text: '整合常用开发场景', link: '/md/frame/spring-boot/04-整合常用开发场景'},
+                {text: '容器镜像支持', link: '/md/frame/spring-boot/08-容器镜像支持'},
+                // {text: '生产就绪功能', link: '/md/frame/spring-boot/09-生产就绪功能'},
+                // {text: '应用部署', link: '/md/frame/spring-boot/10-应用部署'},
+                // {text: 'GraalVM原生镜像支持', link: '/md/frame/spring-boot/11-GraaIVM原生镜像支持'},
+                // {text: '其他', link: '/md/frame/spring-boot/12-其他'},
+            ]
+        }
+    ]
+}
+
+function generateSpringCloudSidebar(){
+    return [
+        {
+            //https://img.shields.io/badge/-Spring-6DB33F?logo=Spring&logoColor=FFF
+            text: iconText('Spring Cloud', 'Spring', 'FFF', 'Spring%20Cloud','6DB33F'),
+            items: [
+                {text: '概览', link: '/md/frame/spring-cloud/01-guide'},
+                {text: 'Spring Cloud Config', link: '/md/frame/spring-cloud/02-Spring Cloud Config'},
+                {text: 'Spring Cloud Bus', link: '/md/frame/spring-cloud/03-Spring Cloud Bus'},
+                {text: 'Spring Cloud Alibaba', link: '/md/frame/spring-cloud/04-Spring Cloud Alibaba'},
+                {text: 'Spring Cloud Gateway', link: '/md/frame/spring-cloud/05-Spring Cloud Gateway'},
+                {text: 'Spring Cloud OpenFeign', link: '/md/frame/spring-cloud/06-Spring Cloud OpenFeign'},
+                {text: 'Spring Cloud Consul', link: '/md/frame/spring-cloud/07-Spring Cloud Consul'},
+                {text: 'Spring Cloud Security', link: '/md/frame/spring-cloud/08-Spring Cloud Security'},
+            ]
+        }
+    ]
+}
+
+function generateDubboSidebar(){
+    return [
+        {
+            text: 'Dubbo',
+            items: [
+                {text: '概览', link: '/md/frame/dubbo/01-开篇词.md'},
+                {text: '入门使用', link: '/md/frame/dubbo/02-入门使用.md'},
+                {text: '核心特性', link: '/md/frame/dubbo/03-核心特性.md'},
+            ]
+        }
+    ]
+}
+
+function generateNettySidebar(){
+    return [
+        {
+            text: 'Netty',
+            items: [
+                {text: '开篇词', link: '/md/frame/netty/01-开篇词.md'},
+                {text: '初识Netty', link: '/md/frame/netty/02-初识Netty.md'},
+                {text: '引导器', link: '/md/frame/netty/03-引导器.md'},
+                {text: '事件调度层', link: '/md/frame/netty/04-事件调度层.md'},
+                {text: '服务编排层', link: '/md/frame/netty/05-服务编排层.md'},
+                {text: '粘包拆包', link: '/md/frame/netty/06-粘包拆包.md'},
+                {text: '自定义协议通信', link: '/md/frame/netty/07-自定义协议通信.md'},
+                {text: '解码器', link: '/md/frame/netty/08-解码器.md'},
+                {text: '数据传输', link: '/md/frame/netty/09-数据传输.md'},
+                {text: 'Netty内存管理', link: '/md/frame/netty/10-Netty内存管理.md'},
+                {text: '对象池技术', link: '/md/frame/netty/11-对象池技术.md'},
+                {text: 'Netty零拷贝技术', link: '/md/frame/netty/12-Netty零拷贝技术.md'},
+            ]
+        }
+    ]
+}
+
+function generateMybatisSidebar(){
+    return [
+        {
+            // https://img.shields.io/badge/-Hibernate-59666C?logo=Hibernate&logoColor=FFF
+            text: iconText('Mybatis', '', 'FFF', 'Mybatis', '59666C'),
+            items: [
+                {text: '开篇词', link: '/md/frame/mybatis/01-开篇词'},
+                {text: '配置', link: '/md/frame/mybatis/02-配置'},
+                {text: 'XML映射器', link: '/md/frame/mybatis/03-XML映射器'},
+                {text: '动态SQL', link: '/md/frame/mybatis/04-动态SQL'},
+                {text: 'SQL语句构建器', link: '/md/frame/mybatis/05-SQL语句构建器'},
+                {text: '缓存', link: '/md/frame/mybatis/06-缓存'},
+            ]
+        }
     ]
 }
 

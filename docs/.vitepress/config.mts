@@ -1,4 +1,4 @@
-import {DefaultTheme, defineConfig} from 'vitepress'
+import {defineConfig} from 'vitepress'
 import nav from "./config/nav.mjs";
 import sidebar from "./config/sidebar.mjs";
 
@@ -32,8 +32,7 @@ export default defineConfig({
     },
 
     footer: {
-      message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2018-present 爱做梦的皮皮檬'
+      copyright: '基于 MIT 许可发布 | Copyright © 2019-present 爱做梦的皮皮檬 🧙 ｜ <a href="https://beian.miit.gov.cn">陕ICP备17020172号-2</a >'
     },
 
     returnToTopLabel: '返回顶部',

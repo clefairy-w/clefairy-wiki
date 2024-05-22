@@ -256,3 +256,12 @@ a.VPLink[href='#']{
     height: 15px;
     border-radius: 2px;
 }
+
+.vp-doc h1,h2,h3,h4,h5,h6 {
+    color: var(--vp-c-yellow-1-1);
+    margin-bottom: 10px;
+}
+
+.vp-doc img{
+    border-radius: 5px;
+}
