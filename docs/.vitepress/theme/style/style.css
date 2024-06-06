@@ -269,3 +269,7 @@ a.VPLink[href='#']{
 .VPLastUpdated {
     font-size: 12px !important;
 }
+
+.vp-doc p, ul{
+    font-size: 14px !important;
+}

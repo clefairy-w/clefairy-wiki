@@ -18,7 +18,9 @@ const sidebar: DefaultTheme.Sidebar = {
     '/md/frame/dubbo': generateDubboSidebar(),
     '/md/frame/netty': generateNettySidebar(),
     '/md/frame/mybatis': generateMybatisSidebar(),
-    'md/exp-log/': generateExpLogSidebar(),
+    '/md/exp-log/': generateExpLogSidebar(),
+    '/md/component/mysql': generateMySQLSidebar(),
+    '/md/cmd/': generateCMDSidebar(),
 
 }
 
@@ -555,15 +557,29 @@ function generateSpringBootSidebar(){
             // https://springdoc.cn/spring-boot/index.html
             text: iconText('Spring Boot', 'Spring-Boot', 'FFF', 'Spring%20Boot','6DB33F'),
             items: [
-                // {text: '简单入门', link: '/md/frame/spring-boot/01-简单入门'},
-                // {text: '使用Spring Boot', link: '/md/frame/spring-boot/02-使用Spring Boot'},
+                // {
+                //     text: "杂谈",
+                //     items:[
+                //         {text: '简单入门', link: '/md/frame/spring-boot/01-简单入门'},
+                //         {text: '使用Spring Boot', link: '/md/frame/spring-boot/02-使用Spring Boot'},
+                //
+                //         {text: '容器镜像支持', link: '/md/frame/spring-boot/08-容器镜像支持'},
+                //         {text: '生产就绪功能', link: '/md/frame/spring-boot/09-生产就绪功能'},
+                //         {text: '应用部署', link: '/md/frame/spring-boot/10-应用部署'},
+                //         {text: 'GraalVM原生镜像支持', link: '/md/frame/spring-boot/11-GraaIVM原生镜像支持'},
+                //         {text: '其他', link: '/md/frame/spring-boot/12-其他'},
+                //     ]
+                // },
+
                 {text: '核心特性', link: '/md/frame/spring-boot/03-核心特性'},
                 {text: '整合常用开发场景', link: '/md/frame/spring-boot/04-整合常用开发场景'},
-                {text: '容器镜像支持', link: '/md/frame/spring-boot/08-容器镜像支持'},
-                // {text: '生产就绪功能', link: '/md/frame/spring-boot/09-生产就绪功能'},
-                // {text: '应用部署', link: '/md/frame/spring-boot/10-应用部署'},
-                // {text: 'GraalVM原生镜像支持', link: '/md/frame/spring-boot/11-GraaIVM原生镜像支持'},
-                // {text: '其他', link: '/md/frame/spring-boot/12-其他'},
+
+                {
+                    text: "源码阅读",
+                    items: [
+                        {},
+                    ]
+                }
             ]
         }
     ]
@@ -575,7 +591,6 @@ function generateSpringCloudSidebar(){
             //https://img.shields.io/badge/-Spring-6DB33F?logo=Spring&logoColor=FFF
             text: iconText('Spring Cloud', 'Spring', 'FFF', 'Spring%20Cloud','6DB33F'),
             items: [
-                {text: '概览', link: '/md/frame/spring-cloud/01-guide'},
                 {text: 'Spring Cloud Config', link: '/md/frame/spring-cloud/02-Spring Cloud Config'},
                 {text: 'Spring Cloud Alibaba', link: '/md/frame/spring-cloud/04-Spring Cloud Alibaba'},
                 {text: 'Spring Cloud Gateway', link: '/md/frame/spring-cloud/05-Spring Cloud Gateway'},
@@ -583,6 +598,10 @@ function generateSpringCloudSidebar(){
                 {text: 'Spring Cloud Bus', link: '/md/frame/spring-cloud/03-Spring Cloud Bus'},
                 {text: 'Spring Cloud Consul', link: '/md/frame/spring-cloud/07-Spring Cloud Consul'},
                 {text: 'Spring Cloud Security', link: '/md/frame/spring-cloud/08-Spring Cloud Security'},
+                {
+                    text: "源码阅读",
+                    items: []
+                },
             ]
         }
     ]
@@ -607,7 +626,7 @@ function generateNettySidebar(){
         {
             text: 'Netty',
             items: [
-                {text: '开篇词', link: '/md/frame/netty/01-开篇词.md'},
+                // {text: '开篇词', link: '/md/frame/netty/01-开篇词.md'},
                 {text: '初识Netty', link: '/md/frame/netty/02-初识Netty.md'},
                 {text: '引导器', link: '/md/frame/netty/03-引导器.md'},
                 {text: '事件调度层', link: '/md/frame/netty/04-事件调度层.md'},
@@ -630,12 +649,23 @@ function generateMybatisSidebar(){
             // https://img.shields.io/badge/-Hibernate-59666C?logo=Hibernate&logoColor=FFF
             text: iconText('Mybatis', '', 'FFF', 'Mybatis', '59666C'),
             items: [
-                {text: '开篇词', link: '/md/frame/mybatis/01-开篇词'},
+                // {
+                //     text: "功能杂谈",
+                //     items: [
+                //
+                //     ]
+                // },
                 {text: '配置', link: '/md/frame/mybatis/02-配置'},
                 {text: 'XML映射器', link: '/md/frame/mybatis/03-XML映射器'},
                 {text: '动态SQL', link: '/md/frame/mybatis/04-动态SQL'},
                 {text: 'SQL语句构建器', link: '/md/frame/mybatis/05-SQL语句构建器'},
                 {text: '缓存', link: '/md/frame/mybatis/06-缓存'},
+                // {
+                //     text: "源码探究",
+                //     items: [
+                //         {},
+                //     ]
+                // }
             ]
         }
     ]
@@ -653,4 +683,26 @@ function generateExpLogSidebar(){
     ]
 }
 
+function generateMySQLSidebar(){
+    return [
+        {
+            text: 'MySQL',
+            items: [
+                {text: 'MySQL体系结构', link: '/md/component/mysql/01-MySQL体系结构'},
+                {text: 'InnoDB存储引擎', link: '/md/component/mysql/02-InnoDB存储引擎'},
+                {text: '索引', link: '/md/component/mysql/05-索引与算法'},
+                {text: '锁与事务', link: '/md/component/mysql/06-锁与事务'},
+                {text: '查询优化', link: '/md/component/mysql/09-性能优化'},
+            ]
+        }
+    ]
+}
+
+function generateCMDSidebar(){
+    return [
+        {text:'Linux', link:'/md/cmd/01-Linux常用命令'},
+        {text:'Git', link:'/md/cmd/02-Git常用命令'},
+
+    ]
+}
 export default sidebar

@@ -29,12 +29,12 @@ const nav:DefaultTheme.NavItem[] = [
                 text: '分布式',
                 link: '/md/distributed-system/CAP原则'
             },
-            {
-                // 该部分的标题
-                text: '负载均衡',
-                // link: '/md/load-balance/负载均衡模型'
-                link: '#'
-            },
+            // {
+            //     // 该部分的标题
+            //     text: '负载均衡',
+            //     // link: '/md/load-balance/负载均衡模型'
+            //     link: '#'
+            // },
         ]
     },
     {
@@ -57,38 +57,38 @@ const nav:DefaultTheme.NavItem[] = [
     {
         text: '组件',
         items: [
-            { text: 'MySQL', link: '#' },
+            { text: 'MySQL', link: '/md/component/mysql/01-MySQL体系结构' },
             { text: 'Redis', link: '#' },
             { text: 'MQ', link: '#' },
             { text: 'Nacos', link: '#' },
             { text: 'Elasticsearch', link: '#' },
-            { text: 'ElasticJob', link: '#' },
             { text: 'Activiti', link: '#' },
+            // { text: 'ElasticJob', link: '#' },
             { text: 'Seata', link: '#' },
             // { text: 'Flink', link: '#' },
             // { text: 'Spark', link: '#' },
         ]
     },
-    {
-        text: '源码阅读',
-        items: [
-            { text: 'SpringBoot', link: '#' },
-            { text: 'Mybatis', link: '#' },
-            { text: 'Netty', link: '#' },
-            { text: 'Guava', link: '#' },
-            { text: 'Dubbo', link: '#' },
-            // { text: 'RocketMQ', link: '#' },
-            { text: 'Nacos', link: '#' },
-        ]
-    },
+    // {
+    //     text: '源码阅读',
+    //     items: [
+    //         { text: 'SpringBoot', link: '#' },
+    //         { text: 'Mybatis', link: '#' },
+    //         { text: 'Netty', link: '#' },
+    //         { text: 'Guava', link: '#' },
+    //         { text: 'Dubbo', link: '#' },
+    //         // { text: 'RocketMQ', link: '#' },
+    //         { text: 'Nacos', link: '#' },
+    //     ]
+    // },
     {
         text: '运维',
         items: [
-            { text: '常用命令', link: '#' },
+            { text: 'CMD', link: '/md/cmd/01-Linux常用命令' },
             { text: 'Docker', link: '#' },
             { text: 'Nginx', link: '#'},
-            { text: 'Jenkins', link: '#' },
-            { text: 'Prometheus', link: '#' },
+            // { text: 'Jenkins', link: '#' },
+            // { text: 'Prometheus', link: '#' },
         ]
     },
     { text: '经验日志', link: '/md/exp-log/02-OpenEuler安装Docker和踩坑分析' },

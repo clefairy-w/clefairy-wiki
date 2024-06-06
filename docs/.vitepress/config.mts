@@ -8,13 +8,13 @@ export default defineConfig({
   head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
   title: "爱做梦的皮皮檬  🧙",
   description: "knowledge magician",
-  lastUpdated: true,
+  // lastUpdated: true,
 
   themeConfig: {
     logo: '/logo.png',
 
     lastUpdated: {
-      text: '最后更新'
+      text: '最后更新',
     },
 
     editLink: {
