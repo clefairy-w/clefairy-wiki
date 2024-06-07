@@ -702,7 +702,6 @@ function generateCMDSidebar(){
     return [
         {text:'Linux', link:'/md/cmd/01-Linux常用命令'},
         {text:'Git', link:'/md/cmd/02-Git常用命令'},
-
     ]
 }
 export default sidebar

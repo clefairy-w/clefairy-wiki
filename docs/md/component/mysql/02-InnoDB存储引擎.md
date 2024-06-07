@@ -10,22 +10,15 @@ MySQL5.5 版本开始，默认使用 InnoDB 存储引擎，它擅长事务处理
 
 <p align='middle'><img src='./images/innodb-architecture-8-0.png' style='width:60%'>InnoDB体系结构(来源MySQL8.0官网)</p>
 
-#### 3. ACID Model
-
-- ***A***: atomicity.原子性，主要涉及InnoDB的事务，与此相关的MySQL特性包括：自动提交设置，COMMIT语句，ROLLBACK语句。
-- ***C***: consistency.一致性，主要涉及InnoDB的崩溃回复，相关特性是双写缓冲区、崩溃回复。
-- ***I***: isolation.隔离性，主要涉及InnoDB的事务，特别是每个事务的隔离级别。
-- ***D***: durability.持久化，主要涉及InnoDB双写缓冲区，binlog同步等。
-
-#### 4. In-Memory Structures
+#### 3. In-Memory Structures
 
 内存架构中主要分为：Buffer Poll(内存缓冲池)、Change Buffer、LogBuffer、Adaptive Hash Index四个区。
 
-##### 4.1. Buffer Pool
+##### 3.1. Buffer Pool
 
 官网介绍Buffer Pool即缓冲池是InnoDB在访问表和索引数据时缓存的主要区域。在执行增删改查操作时，先操作缓存池中的数据(如果缓存池中没有，则从磁盘加载并进行缓存)，然后以一定的频率刷新到磁盘，这样减少了磁盘IO，加快了处理速度。
 
-###### 4.1.1. Buffer Pool大小设置
+###### 3.1.1. Buffer Pool大小设置
 
 ```shell
 # 查看Buffer Pool Size，单位是字节，134217728字节，等于128M
@@ -63,7 +56,7 @@ LRU len: 1164, unzip_LRU len: 0
 I/O sum[0]:cur[0], unzip sum[0]:cur[0]
 ```
 
-###### 4.1.2. Buffer Pool 初始化
+###### 3.1.2. Buffer Pool 初始化
 
 Buffer Pool实际占用内存的大小会比innodb_buffer_pool_size的值大一些，这和它的结构相关。MySQL启动时，InnoDB 会为 Buffer Pool 申请一片连续的内存空间，然后按照默认的16KB的大小划分出一个个的页， Buffer Pool 中的页就叫做缓存页。一开始这些页都是空闲的，随着增删改查操作的执行，将会有数据从磁盘中加载到缓存页上。为更好的管理这些缓存页，InnoDB 为每一个缓存页在最前面都创建了一个内存大小一样的控制块。MySQl在数据操作过程中涉及到加锁，为加快处理速度，可以将buffer pool分成多个实例，这样每个instance之间相互不影响，一个instance的结构大致如下：
 
@@ -71,7 +64,7 @@ Buffer Pool实际占用内存的大小会比innodb_buffer_pool_size的值大一�
 
 控制块中主要包含缓存页的编号，缓存页所属的表空间，缓存页在buffer pool中的内存地址等。
 
-###### 4.1.3. 管理Buffer Pool
+###### 3.1.3. 管理Buffer Pool
 
 随着MySQL的运行，增删改查操作的进行，Buffer Pool上的缓存页既有被使用的，也有空闲的。为了更快的找到空闲页，Buffer Pool在内存中维护了很多的链表来管理缓存页。有LRU List、Free List、Flush List。
 
@@ -102,7 +95,7 @@ Buffer Pool实际占用内存的大小会比innodb_buffer_pool_size的值大一�
 - clean page：被使用page，数据没有被修改过。
 - dirty page：脏页，被使用page，数据被修改过，其中数据与磁盘上的数据产生了不一致。
 
-##### 4.2. Change Buffer
+##### 3.2. Change Buffer
 
 change buffer是一种特殊的数据结构，只适用于普通索引，而不适用于唯一索引。当需要更新(`NSERT`, `UPDATE`, or `DELETE`)一个数据页时，如果数据页在内存中就直接更新，而如果这个数据页还没有在内存中的话，在不影响数据一致性的前提下，InnoDB 会将这些更新操作缓存在 change buffer 中，这样就不需要从磁盘中读入这个数据页了。在下次查询需要访问这个数据页的时候，将数据页读入内存，然后执行 change buffer 中与这个页有关的操作。
 
@@ -110,7 +103,7 @@ change buffer是一种特殊的数据结构，只适用于普通索引，而不�
 
 change buffer之所以只适用于普通索引，是因为如果索引设置了唯一（Unique）属性，在进行修改操作时，InnoDB必须进行唯一性检查。这就导致索引页即使不在缓冲池，为校验唯一性磁盘上的页读取无法避免，此时就应该直接把相应的页放入缓冲池再进行修改。综上，change buffer只适用于普通索引。
 
-###### 4.2.1. 设置change buffer大小
+###### 3.2.1. 设置change buffer大小
 
 ```shell
 mysql> show variables like '%innodb_change_buffer%';
@@ -127,13 +120,13 @@ innodb_change_buffer_max_size：配置写缓冲的大小，占整个缓冲池的
 innodb_change_buffering：默认none关闭change buffer；还有其他值可以选：all-所有的非唯一普通索引页写入change buffer；none-关闭change buffer；
 inserts-缓冲插入操作；deletes-缓冲删除操作；changes-缓冲插入和删除操作；purges-缓冲在后台发生的物理删除操作；
 
-##### 4.3. 自适应Hash索引
+##### 3.3. 自适应Hash索引
 
 InnoDB默认是不支持hash索引的，默认支持的是B+树的索引。因为hash索引不支持范围查找，仅可以用来做值匹配查找。但是自适应hash索引，用于优化对Buffer Pool数据的查询。InnoDB存储引擎会监控对表上各项索引页的查询，如果观察到hash索引可以提升速度，则建立hash索引，称之为自适应hash索引，是内存中的一种数据结构，自适应Hash索引更像是索引的索引，以此来缩短查找的路径，在自适应Hash索引中，key是经常被访问的索引，value是完整记录的位置。
 
 只适用于等值查询，不适用于范围查询和排序的场景。对热点数据，Buffer Pool建立自适应Hash索引，非持久化的。可以通过innodb_adaptive_hash_index来设置开启还是关闭(on/off)。
 
-##### 4.4. Log Buffer
+##### 3.4. Log Buffer
 
 日志缓冲区是保存要写入磁盘上的日志文件的数据的内存区。日志缓冲区大小由Innodb_LOG_BUFFER_SIZE变量定义。默认大小为16MB。日志缓冲区的内容会定期刷新到磁盘。大型日志缓冲区使大型事务能够运行，而无需在事务提交之前将redo log数据写入磁盘。因此，如果有更新、插入或删除许多行的事务，则增加日志缓冲区的大小可以节省磁盘I/O。
 
@@ -147,13 +140,13 @@ InnoDB默认是不支持hash索引的，默认支持的是B+树的索引。因�
 - 1：日志在每次事务提交时写入并刷新到磁盘。
 - 2：日志在每次事务提交后写入，并每秒刷新到磁盘一次。
 
-#### 5. On-Disk Structures
+#### 4. On-Disk Structures
 
-##### 5.1. Tablespaces
+##### 4.1. Tablespaces
 
 表空间(Tablespace)：一个mysql实例，即一个数据库实例，可以对应多个表空间(ibd文件)，用于存储记录，索引等数据。
 
-###### 5.1.1. System Tablespace　　
+###### 4.1.1. System Tablespace　　
 
 ```shell
 [root@localhost var]# docker ps
@@ -171,7 +164,7 @@ bash-5.1# ls
 
 系统表空间默认存储在名为`ibdata1`的文件中。这个文件通常位于MySQL的数据目录下。
 
-###### 5.1.2. File-Per-Table Tablespace
+###### 4.1.2. File-Per-Table Tablespace
 
 File-Per-Table Tablespace（每个表一个表空间）是MySQL中的一个存储配置选项，它允许每个InnoDB表使用单独的表空间文件来存储数据和索引。使用File-Per-Table Tablespace选项，每个InnoDB表都会有一个独立的表空间文件，位于数据目录下。
 
@@ -189,7 +182,7 @@ File-Per-Table Tablespace的缺点和注意事项包括：
 
 使用File-Per-Table Tablespace可以在创建表时进行配置或在现有表上进行更改。要在创建新表时启用File-Per-Table Tablespace，可以在创建表的DDL语句中加上`ENGINE=InnoDB`选项。要在已有表上启用File-Per-Table Tablespace，可以使用MySQL的`ALTER TABLE`语句并设置`innodb_file_per_table`参数为ON。
 
-###### 5.1.3 General Tablespaces
+###### 4.1.3 General Tablespaces
 
 General Tablespaces（通用表空间）是MySQL 5.7版本引入的一个功能，在InnoDB存储引擎中提供了更灵活和更高级的表空间管理选项。 
 
@@ -203,7 +196,7 @@ General Tablespaces（通用表空间）是MySQL 5.7版本引入的一个功能�
 
  使用通用表空间时，可以在创建表时指定`TABLESPACE`子句来为表分配到指定的共享表空间，也可以使用`ALTER TABLE`语句将现有表移动到共享表空间中。
 
-###### 5.1.4. undo Tablespace
+###### 4.1.4. undo Tablespace
 
 在MySQL中，"undo tablespace"（撤销表空间）是用于存储撤销日志数据的一种特殊类型的表空间。
 
@@ -223,7 +216,7 @@ General Tablespaces（通用表空间）是MySQL 5.7版本引入的一个功能�
 
 默认情况下，MySQL使用系统表空间（system tablespace）来存储临时表数据。但是，在高并发环境下，使用单个系统表空间可能会导致性能瓶颈。为了提高性能并优化系统资源的使用，MySQL引入了临时表空间的概念。通过为临时表数据分配独立的临时表空间，MySQL可以更好地管理和优化临时表的创建和使用。临时表空间可以在独立的表空间文件中存储临时表数据，这些文件可以位于不同的存储设备上，从而分散了IO负载。
 
-##### 5.2. Doublewrite Buffer
+##### 4.2. Doublewrite Buffer
 
 在MySQL中，Doublewrite Buffer Files（双写缓冲区文件）是一种用于提高数据保护和恢复机制的技术。Doublewrite Buffer Files使用了一种双写技术，先将数据写入到双写缓冲区文件，然后再写入到实际的数据文件。这可以减少数据损坏和页级别的IO不一致性的风险。双写缓冲区文件的主要作用是用于在MySQL崩溃或意外断电的情况下，保护InnoDB存储引擎使用的数据页的完整性。
 
@@ -233,7 +226,7 @@ General Tablespaces（通用表空间）是MySQL 5.7版本引入的一个功能�
 
 使用双写缓冲区文件的一个潜在问题是会增加写操作的IO负载，因为每个写操作都需要写入两次。为了减少双写带来的性能影响，可以考虑将双写缓冲区文件放置在快速的存储介质上，如SSD。
 
-##### 5.3. Redo Log
+##### 4.3. Redo Log
 
 在MySQL中，Redo Log（重做日志）是用于实现事务的持久性和恢复能力的关键组件之一。它记录了发生在数据库中的数据更改操作，以确保在系统崩溃或断电时，能够将未完成的事务重新应用到数据库中，以保持数据的一致性。
 
