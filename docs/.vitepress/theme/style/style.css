@@ -273,3 +273,24 @@ a.VPLink[href='#']{
 .vp-doc p, ul{
     font-size: 14px !important;
 }
+
+blockquote:before {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 4px;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: var(--vp-c-yellow-1-1);
+    border-radius: 2px;
+}
+
+blockquote {
+    color: #304455;
+    border-radius: 5px;
+    padding: 10px 16px;
+    background-color: #f8f8f8;
+    position: relative;
+    border-left: none !important;
+}

@@ -20,8 +20,9 @@ const sidebar: DefaultTheme.Sidebar = {
     '/md/frame/mybatis': generateMybatisSidebar(),
     '/md/exp-log/': generateExpLogSidebar(),
     '/md/component/mysql': generateMySQLSidebar(),
+    '/md/component/redis': generateRedisSidebar(),
     '/md/cmd/': generateCMDSidebar(),
-
+    '/md/nginx/': generateNginxSidebar(),
 }
 
 // network sidebar
@@ -103,7 +104,7 @@ function generateDataStructureAndAlgoSidebar() {
                     ]
                 },
 
-                {text: '字符串哈希表复盘', link: '/md/algo/Leetcode随想录09-字符串哈希表复盘.md'},
+                // {text: '字符串哈希表复盘', link: '/md/algo/Leetcode随想录09-字符串哈希表复盘.md'},
                 {
                     text: '栈与队列',
                     collapsed: true,
@@ -120,10 +121,10 @@ function generateDataStructureAndAlgoSidebar() {
                             text: '<span class="iterm-symbol"></span>239.滑动窗口最大值|347.前K个高频元素',
                             link: '/md/algo/Leetcode随想录12-栈与队列||239.滑动窗口最大值|347.前K个高频元素.md'
                         },
-                        {
-                            text: '<span class="iterm-symbol"></span>栈与队列复盘',
-                            link: '/md/algo/Leetcode随想录12-栈与队列复盘.md'
-                        }
+                        // {
+                        //     text: '<span class="iterm-symbol"></span>栈与队列复盘',
+                        //     link: '/md/algo/Leetcode随想录12-栈与队列复盘.md'
+                        // }
                     ]
                 },
 
@@ -167,10 +168,10 @@ function generateDataStructureAndAlgoSidebar() {
                             text: '<span class="iterm-symbol"></span>669.修剪二叉搜索树|108.将有序数组转换为二叉搜索树|538.把二叉搜索树转换为累加树',
                             link: '/md/algo/Leetcode随想录21-二叉树||669.修剪二叉搜索树|108.将有序数组转换为二叉搜索树|538.把二叉搜索树转换为累加树.md'
                         },
-                        {
-                            text: '<span class="iterm-symbol"></span>二叉树复盘',
-                            link: '/md/algo/Leetcode随想录21-二叉树复盘.md'
-                        },
+                        // {
+                        //     text: '<span class="iterm-symbol"></span>二叉树复盘',
+                        //     link: '/md/algo/Leetcode随想录21-二叉树复盘.md'
+                        // },
                     ]
                 },
                 {
@@ -201,10 +202,10 @@ function generateDataStructureAndAlgoSidebar() {
                             text: '<span class="iterm-symbol"></span>332.重新安排行程|51.N皇后|37.解数独',
                             link: '/md/algo/Leetcode随想录27-回溯||332.重新安排行程|51.N皇后|37.解数独.md'
                         },
-                        {
-                            text: '<span class="iterm-symbol"></span>回溯复盘',
-                            link: '/md/algo/Leetcode随想录27-回溯复盘.md'
-                        },
+                        // {
+                        //     text: '<span class="iterm-symbol"></span>回溯复盘',
+                        //     link: '/md/algo/Leetcode随想录27-回溯复盘.md'
+                        // },
                     ]
                 },
                 {
@@ -235,10 +236,10 @@ function generateDataStructureAndAlgoSidebar() {
                             text: '<span class="iterm-symbol"></span>738.单调递增的数字|714.买卖股票的最佳时机含手续费|968.监控二叉树',
                             link: '/md/algo/Leetcode随想录33-贪心算法||738.单调递增的数字|714.买卖股票的最佳时机含手续费|968.监控二叉树.md'
                         },
-                        {
-                            text: '<span class="iterm-symbol"></span>贪心算法复盘',
-                            link: '/md/algo/Leetcode随想录33-贪心算法复盘.md'
-                        },
+                        // {
+                        //     text: '<span class="iterm-symbol"></span>贪心算法复盘',
+                        //     link: '/md/algo/Leetcode随想录33-贪心算法复盘.md'
+                        // },
                     ]
                 },
                 {
@@ -308,10 +309,10 @@ function generateDataStructureAndAlgoSidebar() {
                             text: '<span class="iterm-symbol"></span>647.回文子串|516.最长回文子序列|5.最长回文串',
                             link: '/md/algo/Leetcode随想录50-动态规划||647.回文子串|516.最长回文子序列|5.最长回文串.md'
                         },
-                        {
-                            text: '<span class="iterm-symbol"></span>动态规划复盘',
-                            link: '/md/algo/Leetcode随想录51-动态规划复盘.md'
-                        },
+                        // {
+                        //     text: '<span class="iterm-symbol"></span>动态规划复盘',
+                        //     link: '/md/algo/Leetcode随想录51-动态规划复盘.md'
+                        // },
                     ]
                 },
                 {
@@ -388,28 +389,28 @@ function generateDesignPatternSidebar() {
                             link: '/md/design-pattern/06-结构型模式之适配器模式.md'
                         },
                         {
-                            text: '<span class="iterm-symbol"></span>桥接模式',
-                            link: '/md/design-pattern/07-结构型模式之桥接模式.md'
-                        },
-                        {
-                            text: '<span class="iterm-symbol"></span>组合模式',
-                            link: '/md/design-pattern/08-结构型模式之组合模式.md'
+                            text: '<span class="iterm-symbol"></span>代理模式',
+                            link: '/md/design-pattern/12-结构型模式之代理模式.md'
                         },
                         {
                             text: '<span class="iterm-symbol"></span>装饰器模式',
                             link: '/md/design-pattern/09-结构型模式之装饰器模式.md'
                         },
                         {
-                            text: '<span class="iterm-symbol"></span>外观模式',
-                            link: '/md/design-pattern/10-结构型模式之外观模式.md'
+                            text: '<span class="iterm-symbol"></span>桥接模式',
+                            link: '/md/design-pattern/07-结构型模式之桥接模式.md'
                         },
                         {
                             text: '<span class="iterm-symbol"></span>享元模式',
                             link: '/md/design-pattern/11-结构型模式之享元模式.md'
                         },
                         {
-                            text: '<span class="iterm-symbol"></span>代理模式',
-                            link: '/md/design-pattern/12-结构型模式之代理模式.md'
+                            text: '<span class="iterm-symbol"></span>组合模式',
+                            link: '/md/design-pattern/08-结构型模式之组合模式.md'
+                        },
+                        {
+                            text: '<span class="iterm-symbol"></span>外观模式',
+                            link: '/md/design-pattern/10-结构型模式之外观模式.md'
                         },
                         {
                             text: '<span class="iterm-symbol"></span>门面模式',
@@ -426,24 +427,8 @@ function generateDesignPatternSidebar() {
                             link: '/md/design-pattern/14-行为型模式之责任链模式.md'
                         },
                         {
-                            text: '<span class="iterm-symbol"></span>命令模式',
-                            link: '/md/design-pattern/14-行为型模式之命令模式.md'
-                        },
-                        {
-                            text: '<span class="iterm-symbol"></span>迭代器模式',
-                            link: '/md/design-pattern/15-行为型模式之迭代器模式.md'
-                        },
-                        {
-                            text: '<span class="iterm-symbol"></span>备忘录模式',
-                            link: '/md/design-pattern/17-行为型模式之备忘录模式.md'
-                        },
-                        {
                             text: '<span class="iterm-symbol"></span>观察者模式',
                             link: '/md/design-pattern/18-行为型模式之观察者模式.md'
-                        },
-                        {
-                            text: '<span class="iterm-symbol"></span>状态模式',
-                            link: '/md/design-pattern/19-行为型模式之状态模式.md'
                         },
                         {
                             text: '<span class="iterm-symbol"></span>策略模式',
@@ -452,6 +437,22 @@ function generateDesignPatternSidebar() {
                         {
                             text: '<span class="iterm-symbol"></span>模板模式',
                             link: '/md/design-pattern/21-行为型模式之模板模式.md'
+                        },
+                        {
+                            text: '<span class="iterm-symbol"></span>迭代器模式',
+                            link: '/md/design-pattern/15-行为型模式之迭代器模式.md'
+                        },
+                        {
+                            text: '<span class="iterm-symbol"></span>命令模式',
+                            link: '/md/design-pattern/14-行为型模式之命令模式.md'
+                        },
+                        {
+                            text: '<span class="iterm-symbol"></span>备忘录模式',
+                            link: '/md/design-pattern/17-行为型模式之备忘录模式.md'
+                        },
+                        {
+                            text: '<span class="iterm-symbol"></span>状态模式',
+                            link: '/md/design-pattern/19-行为型模式之状态模式.md'
                         },
                         {
                             text: '<span class="iterm-symbol"></span>访问者模式',
@@ -557,27 +558,18 @@ function generateSpringBootSidebar(){
             // https://springdoc.cn/spring-boot/index.html
             text: iconText('Spring Boot', 'Spring-Boot', 'FFF', 'Spring%20Boot','6DB33F'),
             items: [
-                // {
-                //     text: "杂谈",
-                //     items:[
-                //         {text: '简单入门', link: '/md/frame/spring-boot/01-简单入门'},
-                //         {text: '使用Spring Boot', link: '/md/frame/spring-boot/02-使用Spring Boot'},
-                //
-                //         {text: '容器镜像支持', link: '/md/frame/spring-boot/08-容器镜像支持'},
-                //         {text: '生产就绪功能', link: '/md/frame/spring-boot/09-生产就绪功能'},
-                //         {text: '应用部署', link: '/md/frame/spring-boot/10-应用部署'},
-                //         {text: 'GraalVM原生镜像支持', link: '/md/frame/spring-boot/11-GraaIVM原生镜像支持'},
-                //         {text: '其他', link: '/md/frame/spring-boot/12-其他'},
-                //     ]
-                // },
 
                 {text: '核心特性', link: '/md/frame/spring-boot/03-核心特性'},
                 {text: '整合常用开发场景', link: '/md/frame/spring-boot/04-整合常用开发场景'},
-
                 {
-                    text: "源码阅读",
+                    text: "源码探究",
                     items: [
-                        {},
+                        {text: 'Spring IOC容器分析', link: '/md/frame/spring-boot/16-Spring IOC探究'},
+                        {text: 'Spring AOP分析', link: '/md/frame/spring-boot/17-Spring AOP探究'},
+                        {text: 'SpringBoot启动流程分析', link: '/md/frame/spring-boot/18-SpringBoot启动流程分析'},
+                        {text: 'SpringBoot自动装配', link: '/md/frame/spring-boot/12-SpringBoot自动装配'},
+                        // {text: 'SpringBoot中IOC容器的扩展', link: '/md/frame/spring-boot/13-IOC容器在SpringBoot中的扩展'},
+                        // {text: 'SpringBoot中Bean生命周期分析', link: '/md/frame/spring-boot/14-SpringBoot中Bean生命周期分析'},
                     ]
                 }
             ]
@@ -591,17 +583,20 @@ function generateSpringCloudSidebar(){
             //https://img.shields.io/badge/-Spring-6DB33F?logo=Spring&logoColor=FFF
             text: iconText('Spring Cloud', 'Spring', 'FFF', 'Spring%20Cloud','6DB33F'),
             items: [
-                {text: 'Spring Cloud Config', link: '/md/frame/spring-cloud/02-Spring Cloud Config'},
-                {text: 'Spring Cloud Alibaba', link: '/md/frame/spring-cloud/04-Spring Cloud Alibaba'},
-                {text: 'Spring Cloud Gateway', link: '/md/frame/spring-cloud/05-Spring Cloud Gateway'},
-                {text: 'Spring Cloud OpenFeign', link: '/md/frame/spring-cloud/06-Spring Cloud OpenFeign'},
-                {text: 'Spring Cloud Bus', link: '/md/frame/spring-cloud/03-Spring Cloud Bus'},
-                {text: 'Spring Cloud Consul', link: '/md/frame/spring-cloud/07-Spring Cloud Consul'},
-                {text: 'Spring Cloud Security', link: '/md/frame/spring-cloud/08-Spring Cloud Security'},
-                {
-                    text: "源码阅读",
-                    items: []
-                },
+                {text: '服务注册与发现', link: '/md/frame/spring-cloud/02-服务注册与发现'},
+                {text: '服务配置中心', link: '/md/frame/spring-cloud/03-服务配置中心'},
+                {text: '微服务网关', link: '/md/frame/spring-cloud/04-微服务网关'},
+                {text: '微服务间的远程调用', link: '/md/frame/spring-cloud/08-微服务间的远程调用'},
+                {text: '负载均衡', link: '/md/frame/spring-cloud/05-负载均衡'},
+                {text: '容错与隔离', link: '/md/frame/spring-cloud/06-容错与隔离'},
+                {text: '服务监控', link: '/md/frame/spring-cloud/07-服务监控'},
+                // {text: 'Spring Cloud OpenFeign', link: '/md/frame/spring-cloud/06-Spring Cloud OpenFeign'},
+                // {text: 'Spring Cloud Gateway', link: '/md/frame/spring-cloud/05-Spring Cloud Gateway'},
+                // {text: 'Spring Cloud Config', link: '/md/frame/spring-cloud/02-Spring Cloud Config'},
+                // {text: 'Spring Cloud Alibaba', link: '/md/frame/spring-cloud/04-Spring Cloud Alibaba'},
+                // {text: 'Spring Cloud Bus', link: '/md/frame/spring-cloud/03-Spring Cloud Bus'},
+                // {text: 'Spring Cloud Consul', link: '/md/frame/spring-cloud/07-Spring Cloud Consul'},
+                // {text: 'Spring Cloud Security', link: '/md/frame/spring-cloud/08-Spring Cloud Security'},
             ]
         }
     ]
@@ -678,6 +673,7 @@ function generateExpLogSidebar(){
             collapsed: false,
             items: [
                 {text: 'OpenEuler安装Docker', link: '/md/exp-log/02-OpenEuler安装Docker和踩坑分析'},
+                {text: 'Docker镜像拉取失败分析', link: '/md/exp-log/03-Docker 拉取镜像失败分析'},
             ]
         }
     ]
@@ -702,6 +698,21 @@ function generateCMDSidebar(){
     return [
         {text:'Linux', link:'/md/cmd/01-Linux常用命令'},
         {text:'Git', link:'/md/cmd/02-Git常用命令'},
+    ]
+}
+
+function generateNginxSidebar(){
+    return [
+        {text:'Nginx配置HTTPS', link:'/md/nginx/Nginx如何配置HTTPS'},
+    ]
+}
+
+function generateRedisSidebar(){
+    return [
+        {text:'Redis整体结构',link:'/md/component/redis/01-Redis整体结构分析'},
+        {text:'数据结构与数据类型',link:'/md/component/redis/02-数据结构及数据类型'},
+        {text:'内存管理',link:'/md/component/redis/03-内存管理'},
+        {text:'持久化',link:'/md/component/redis/04-持久化'},
     ]
 }
 export default sidebar

@@ -7,6 +7,10 @@ const nav:DefaultTheme.NavItem[] = [
         text: '基础',
         items: [
             {
+                text: '操作系统',
+                link: '/md/os/01-开篇词',
+            },
+            {
                 // 该部分的标题
                 text: '网络',
                 link: '/md/network/01-网络体系结构模型',
@@ -16,19 +20,15 @@ const nav:DefaultTheme.NavItem[] = [
                 link: '/md/algo/Leetcode随想录00-基本理论'
             },
             {
-                text: '操作系统',
-                link: '/md/os/01-开篇词',
-            },
-            {
                 // 该部分的标题
                 text: '设计模式',
                 link: '/md/design-pattern/00-前言之六大设计原则'
             },
-            {
-                // 该部分的标题
-                text: '分布式',
-                link: '/md/distributed-system/CAP原则'
-            },
+            // {
+            //     // 该部分的标题
+            //     text: '分布式',
+            //     link: '/md/distributed-system/CAP原则'
+            // },
             // {
             //     // 该部分的标题
             //     text: '负载均衡',
@@ -58,13 +58,13 @@ const nav:DefaultTheme.NavItem[] = [
         text: '组件',
         items: [
             { text: 'MySQL', link: '/md/component/mysql/01-MySQL体系结构' },
-            { text: 'Redis', link: '#' },
+            { text: 'Redis', link: '/md/component/redis/01-Redis整体结构分析' },
             { text: 'MQ', link: '#' },
-            { text: 'Nacos', link: '#' },
-            { text: 'Elasticsearch', link: '#' },
             { text: 'Activiti', link: '#' },
+            { text: 'Elasticsearch', link: '#' },
             // { text: 'ElasticJob', link: '#' },
-            { text: 'Seata', link: '#' },
+            // { text: 'Seata', link: '#' },
+            // { text: 'Nacos', link: '#' },
             // { text: 'Flink', link: '#' },
             // { text: 'Spark', link: '#' },
         ]
@@ -86,7 +86,7 @@ const nav:DefaultTheme.NavItem[] = [
         items: [
             { text: 'CMD', link: '/md/cmd/01-Linux常用命令' },
             { text: 'Docker', link: '#' },
-            { text: 'Nginx', link: '#'},
+            { text: 'Nginx', link: '/md/nginx/Nginx如何配置HTTPS'},
             // { text: 'Jenkins', link: '#' },
             // { text: 'Prometheus', link: '#' },
         ]
