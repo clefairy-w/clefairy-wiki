@@ -60,8 +60,8 @@ const nav:DefaultTheme.NavItem[] = [
             { text: 'MySQL', link: '/md/component/mysql/01-MySQL体系结构' },
             { text: 'Redis', link: '/md/component/redis/01-Redis整体结构分析' },
             { text: 'MQ', link: '#' },
-            { text: 'Activiti', link: '#' },
             { text: 'Elasticsearch', link: '#' },
+            // { text: 'Activiti', link: '#' },
             // { text: 'ElasticJob', link: '#' },
             // { text: 'Seata', link: '#' },
             // { text: 'Nacos', link: '#' },
@@ -91,7 +91,7 @@ const nav:DefaultTheme.NavItem[] = [
             // { text: 'Prometheus', link: '#' },
         ]
     },
-    { text: '经验日志', link: '/md/exp-log/02-OpenEuler安装Docker和踩坑分析' },
+    { text: '其他日志', link: '/md/exp-log/02-OpenEuler安装Docker和踩坑分析' },
     // { text: '阅读日志', link: '#' }
 ]
 export default nav

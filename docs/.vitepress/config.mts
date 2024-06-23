@@ -5,13 +5,13 @@ import sidebar from "./config/sidebar.mjs";
 // https://vitepress.dev/reference/site-config
 // @ts-ignore
 export default defineConfig({
-  head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
-  title: "爱做梦的皮皮檬  🧙",
+  // head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
+  title: "爱做梦的皮皮檬    🧙",
   description: "knowledge magician",
   // lastUpdated: true,
 
   themeConfig: {
-    logo: '/logo.png',
+    // logo: '/logo.png',
 
     lastUpdated: {
       text: '最后更新',

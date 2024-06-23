@@ -359,12 +359,12 @@ function generateDesignPatternSidebar() {
                     collapsed: false,
                     items: [
                         {
-                            text: '<span class="iterm-symbol"></span>工厂方法模式',
-                            link: '/md/design-pattern/01-创建型模式之工厂方法模式.md'
+                            text: '<span class="iterm-symbol"></span>单例模式',
+                            link: '/md/design-pattern/05-创建型模式之单例模式.md'
                         },
                         {
-                            text: '<span class="iterm-symbol"></span>抽象工厂模式',
-                            link: '/md/design-pattern/02-创建型模式之抽象工厂模式.md'
+                            text: '<span class="iterm-symbol"></span>工厂方法模式',
+                            link: '/md/design-pattern/01-创建型模式之工厂方法模式.md'
                         },
                         {
                             text: '<span class="iterm-symbol"></span>建造者模式',
@@ -373,10 +373,6 @@ function generateDesignPatternSidebar() {
                         {
                             text: '<span class="iterm-symbol"></span>原型模式',
                             link: '/md/design-pattern/04-创建型模式之原型模式.md'
-                        },
-                        {
-                            text: '<span class="iterm-symbol"></span>单例模式',
-                            link: '/md/design-pattern/05-创建型模式之单例模式.md'
                         },
                     ]
                 },
@@ -405,16 +401,8 @@ function generateDesignPatternSidebar() {
                             link: '/md/design-pattern/11-结构型模式之享元模式.md'
                         },
                         {
-                            text: '<span class="iterm-symbol"></span>组合模式',
-                            link: '/md/design-pattern/08-结构型模式之组合模式.md'
-                        },
-                        {
-                            text: '<span class="iterm-symbol"></span>外观模式',
-                            link: '/md/design-pattern/10-结构型模式之外观模式.md'
-                        },
-                        {
-                            text: '<span class="iterm-symbol"></span>门面模式',
-                            link: '/md/design-pattern/13-结构型模式之门面模式.md'
+                            text: '<span class="iterm-symbol"></span>其他结构型模式',
+                            link: '/md/design-pattern/08-其他结构型设计模式.md'
                         },
                     ]
                 },
@@ -443,24 +431,8 @@ function generateDesignPatternSidebar() {
                             link: '/md/design-pattern/15-行为型模式之迭代器模式.md'
                         },
                         {
-                            text: '<span class="iterm-symbol"></span>命令模式',
-                            link: '/md/design-pattern/14-行为型模式之命令模式.md'
-                        },
-                        {
-                            text: '<span class="iterm-symbol"></span>备忘录模式',
-                            link: '/md/design-pattern/17-行为型模式之备忘录模式.md'
-                        },
-                        {
-                            text: '<span class="iterm-symbol"></span>状态模式',
-                            link: '/md/design-pattern/19-行为型模式之状态模式.md'
-                        },
-                        {
-                            text: '<span class="iterm-symbol"></span>访问者模式',
-                            link: '/md/design-pattern/22-行为型模式之访问者模式.md'
-                        },
-                        {
-                            text: '<span class="iterm-symbol"></span>解释器模式',
-                            link: '/md/design-pattern/23-行为型模式之解释器模式.md'
+                            text: '<span class="iterm-symbol"></span>其他行为型模式',
+                            link: '/md/design-pattern/23-其他行为型设计模式.md'
                         },
 
                     ]
@@ -507,16 +479,16 @@ function generateJavaSidebar(){
                     text: 'Java基础',
                     collapsed: true,
                     items: [
-                        {text:'基础',link: '/md/java/Java基础/01-基础.md'},
-                        {text:'面向对象编程',link: '/md/java/Java基础/02-面向对象编程.md'},
-                        {text:'异常处理',link: '/md/java/Java基础/03-异常处理.md'},
-                        {text:'日志与断言',link: '/md/java/Java基础/04-日志与断言.md'},
-                        {text:'Array',link: '/md/java/Java基础/05-Arrays.md'},
-                        {text:'List',link: '/md/java/Java基础/06-List.md'},
-                        {text:'Queue',link: '/md/java/Java基础/07-Queue.md'},
-                        {text:'Map',link: '/md/java/Java基础/08-Map.md'},
-                        {text:'Set',link: '/md/java/Java基础/09-Set.md'},
-                        {text:'I/O',link: '/md/java/Java基础/10-IO.md'},
+                        {text:'<span class="iterm-symbol"></span>基础',link: '/md/java/Java基础/01-基础.md'},
+                        {text:'<span class="iterm-symbol"></span>面向对象编程',link: '/md/java/Java基础/02-面向对象编程.md'},
+                        {text:'<span class="iterm-symbol"></span>异常处理',link: '/md/java/Java基础/03-异常处理.md'},
+                        {text:'<span class="iterm-symbol"></span>日志与断言',link: '/md/java/Java基础/04-日志与断言.md'},
+                        {text:'<span class="iterm-symbol"></span>Array',link: '/md/java/Java基础/05-Arrays.md'},
+                        {text:'<span class="iterm-symbol"></span>List',link: '/md/java/Java基础/06-List.md'},
+                        {text:'<span class="iterm-symbol"></span>Queue',link: '/md/java/Java基础/07-Queue.md'},
+                        {text:'<span class="iterm-symbol"></span>Map',link: '/md/java/Java基础/08-Map.md'},
+                        {text:'<span class="iterm-symbol"></span>Set',link: '/md/java/Java基础/09-Set.md'},
+                        {text:'<span class="iterm-symbol"></span>I/O',link: '/md/java/Java基础/10-IO.md'},
                         // {text:'Lambda表达式',link: '/md/java/Java基础/11-lambda表达式.md'},
                         // {text:'Java新特性(8|17)',link: '/md/java/Java基础/12-新特性.md'},
 
@@ -526,24 +498,24 @@ function generateJavaSidebar(){
                     text: 'Java并发',
                     collapsed: true,
                     items: [
-                        {text: '线程', link: '/md/java/Java并发/01-线程.md'},
-                        {text: '线程池', link: '/md/java/Java并发/08-线程池.md'},
-                        {text:'volatile',link: '/md/java/Java并发/02-volatile.md'},
-                        {text:'synchronized',link: '/md/java/Java并发/03-synchronized.md'},
-                        {text:'CAS',link: '/md/java/Java并发/05-CAS.md'},
-                        {text:'AQS',link: '/md/java/Java并发/06-AQS.md'},
-                        {text:'JUC中的锁',link: '/md/java/Java并发/04-JUC中的锁.md'},
-                        {text:'并发容器',link: '/md/java/Java并发/07-并发容器.md'},
+                        {text: '<span class="iterm-symbol"></span>线程', link: '/md/java/Java并发/01-线程.md'},
+                        {text: '<span class="iterm-symbol"></span>线程池', link: '/md/java/Java并发/08-线程池.md'},
+                        {text:'<span class="iterm-symbol"></span>volatile',link: '/md/java/Java并发/02-volatile.md'},
+                        {text:'<span class="iterm-symbol"></span>synchronized',link: '/md/java/Java并发/03-synchronized.md'},
+                        {text:'<span class="iterm-symbol"></span>CAS',link: '/md/java/Java并发/05-CAS.md'},
+                        {text:'<span class="iterm-symbol"></span>AQS',link: '/md/java/Java并发/06-AQS.md'},
+                        {text:'<span class="iterm-symbol"></span>JUC中的锁',link: '/md/java/Java并发/04-JUC中的锁.md'},
+                        {text:'<span class="iterm-symbol"></span>并发容器',link: '/md/java/Java并发/07-并发容器.md'},
                     ]
                 },
                 {
                     text: 'JVM',
                     collapsed: true,
                     items: [
-                        {text:'内存结构',link: '/md/java/JVM/01-内存结构.md'},
-                        {text:'垃圾收集',link: '/md/java/JVM/02-垃圾收集.md'},
-                        {text:'性能监控与调优',link: '/md/java/JVM/04-性能监控与调优.md'},
-                        {text:'字节码与类加载',link: '/md/java/JVM/03-字节码与类加载.md'},
+                        {text:'<span class="iterm-symbol"></span>内存结构',link: '/md/java/JVM/01-内存结构.md'},
+                        {text:'<span class="iterm-symbol"></span>垃圾收集',link: '/md/java/JVM/02-垃圾收集.md'},
+                        {text:'<span class="iterm-symbol"></span>性能监控与调优',link: '/md/java/JVM/04-性能监控与调优.md'},
+                        {text:'<span class="iterm-symbol"></span>字节码与类加载',link: '/md/java/JVM/03-字节码与类加载.md'},
                     ]
                 },
             ]
@@ -564,10 +536,10 @@ function generateSpringBootSidebar(){
                 {
                     text: "源码探究",
                     items: [
-                        {text: 'Spring IOC容器分析', link: '/md/frame/spring-boot/16-Spring IOC探究'},
-                        {text: 'Spring AOP分析', link: '/md/frame/spring-boot/17-Spring AOP探究'},
-                        {text: 'SpringBoot启动流程分析', link: '/md/frame/spring-boot/18-SpringBoot启动流程分析'},
-                        {text: 'SpringBoot自动装配', link: '/md/frame/spring-boot/12-SpringBoot自动装配'},
+                        {text: '<span class="iterm-symbol"></span>Spring IOC容器分析', link: '/md/frame/spring-boot/16-Spring IOC探究'},
+                        {text: '<span class="iterm-symbol"></span>Spring AOP分析', link: '/md/frame/spring-boot/17-Spring AOP探究'},
+                        {text: '<span class="iterm-symbol"></span>SpringBoot启动流程分析', link: '/md/frame/spring-boot/18-SpringBoot启动流程分析'},
+                        {text: '<span class="iterm-symbol"></span>SpringBoot自动装配', link: '/md/frame/spring-boot/12-SpringBoot自动装配'},
                         // {text: 'SpringBoot中IOC容器的扩展', link: '/md/frame/spring-boot/13-IOC容器在SpringBoot中的扩展'},
                         // {text: 'SpringBoot中Bean生命周期分析', link: '/md/frame/spring-boot/14-SpringBoot中Bean生命周期分析'},
                     ]
@@ -590,13 +562,6 @@ function generateSpringCloudSidebar(){
                 {text: '负载均衡', link: '/md/frame/spring-cloud/05-负载均衡'},
                 {text: '容错与隔离', link: '/md/frame/spring-cloud/06-容错与隔离'},
                 {text: '服务监控', link: '/md/frame/spring-cloud/07-服务监控'},
-                // {text: 'Spring Cloud OpenFeign', link: '/md/frame/spring-cloud/06-Spring Cloud OpenFeign'},
-                // {text: 'Spring Cloud Gateway', link: '/md/frame/spring-cloud/05-Spring Cloud Gateway'},
-                // {text: 'Spring Cloud Config', link: '/md/frame/spring-cloud/02-Spring Cloud Config'},
-                // {text: 'Spring Cloud Alibaba', link: '/md/frame/spring-cloud/04-Spring Cloud Alibaba'},
-                // {text: 'Spring Cloud Bus', link: '/md/frame/spring-cloud/03-Spring Cloud Bus'},
-                // {text: 'Spring Cloud Consul', link: '/md/frame/spring-cloud/07-Spring Cloud Consul'},
-                // {text: 'Spring Cloud Security', link: '/md/frame/spring-cloud/08-Spring Cloud Security'},
             ]
         }
     ]
@@ -644,23 +609,11 @@ function generateMybatisSidebar(){
             // https://img.shields.io/badge/-Hibernate-59666C?logo=Hibernate&logoColor=FFF
             text: iconText('Mybatis', '', 'FFF', 'Mybatis', '59666C'),
             items: [
-                // {
-                //     text: "功能杂谈",
-                //     items: [
-                //
-                //     ]
-                // },
                 {text: '配置', link: '/md/frame/mybatis/02-配置'},
                 {text: 'XML映射器', link: '/md/frame/mybatis/03-XML映射器'},
                 {text: '动态SQL', link: '/md/frame/mybatis/04-动态SQL'},
                 {text: 'SQL语句构建器', link: '/md/frame/mybatis/05-SQL语句构建器'},
                 {text: '缓存', link: '/md/frame/mybatis/06-缓存'},
-                // {
-                //     text: "源码探究",
-                //     items: [
-                //         {},
-                //     ]
-                // }
             ]
         }
     ]

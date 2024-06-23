@@ -294,3 +294,24 @@ blockquote {
     position: relative;
     border-left: none !important;
 }
+
+.VPDoc {
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+
+.VPNavBarTitle .title ::before{
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #fd6458;
+    /*box-shadow: 20px 0 0 #ffbf2b, 40px 0 0 #24cc3d, 60px 0 0 #FFFF00;*/
+    box-shadow: 20px 0 0 #ffbf2b, 40px 0 0 #24cc3d;
+    margin-right: 60px;
+}
