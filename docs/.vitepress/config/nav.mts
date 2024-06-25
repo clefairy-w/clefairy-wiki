@@ -48,8 +48,8 @@ const nav:DefaultTheme.NavItem[] = [
         items: [
             { text: 'Spring Boot', link: '/md/frame/spring-boot/03-核心特性' },
             { text: 'Spring Cloud', link: '/md/frame/spring-cloud/01-guide' },
-            { text: 'Mybatis', link: '/md/frame/mybatis/01-开篇词' },
-            { text: 'Netty', link: '/md/frame/netty/01-开篇词' },
+            { text: 'Mybatis', link: '/md/frame/mybatis/01-guide' },
+            { text: 'Netty', link: '/md/frame/netty/01-guide' },
             // { text: 'Dubbo', link: '/md/frame/dubbo/01-开篇词' },
             // { text: 'JUnit', link: '#' },
         ]
@@ -69,18 +69,6 @@ const nav:DefaultTheme.NavItem[] = [
             // { text: 'Spark', link: '#' },
         ]
     },
-    // {
-    //     text: '源码阅读',
-    //     items: [
-    //         { text: 'SpringBoot', link: '#' },
-    //         { text: 'Mybatis', link: '#' },
-    //         { text: 'Netty', link: '#' },
-    //         { text: 'Guava', link: '#' },
-    //         { text: 'Dubbo', link: '#' },
-    //         // { text: 'RocketMQ', link: '#' },
-    //         { text: 'Nacos', link: '#' },
-    //     ]
-    // },
     {
         text: '运维',
         items: [

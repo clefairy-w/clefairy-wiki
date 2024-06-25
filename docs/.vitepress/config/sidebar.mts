@@ -5,6 +5,11 @@ const iconText = (name, logo, logoColor, label, labelColor) => {
     return `<span class="side-iterm-text">${name}<img src="${urlTemplate}"></span>`
 }
 
+const iconSvg = (name, logo, logoColor, svg) =>{
+    const urlTemplate = `https://img.shields.io/badge/${svg}?logo=${logo}&logoColor=${logoColor}`
+    return `<span class="side-iterm-text">${name}<img src="${urlTemplate}"></span>`
+}
+
 const sidebar: DefaultTheme.Sidebar = {
     '/md/network': generateNetworkSidebar(),
     '/md/algo': generateDataStructureAndAlgoSidebar(),
@@ -586,18 +591,16 @@ function generateNettySidebar(){
         {
             text: 'Netty',
             items: [
-                // {text: '开篇词', link: '/md/frame/netty/01-开篇词.md'},
-                {text: '初识Netty', link: '/md/frame/netty/02-初识Netty.md'},
                 {text: '引导器', link: '/md/frame/netty/03-引导器.md'},
                 {text: '事件调度层', link: '/md/frame/netty/04-事件调度层.md'},
                 {text: '服务编排层', link: '/md/frame/netty/05-服务编排层.md'},
                 {text: '粘包拆包', link: '/md/frame/netty/06-粘包拆包.md'},
                 {text: '自定义协议通信', link: '/md/frame/netty/07-自定义协议通信.md'},
-                {text: '解码器', link: '/md/frame/netty/08-解码器.md'},
+                // {text: '编解码器', link: '/md/frame/netty/08-编解码器.md'},
                 {text: '数据传输', link: '/md/frame/netty/09-数据传输.md'},
                 {text: 'Netty内存管理', link: '/md/frame/netty/10-Netty内存管理.md'},
-                {text: '对象池技术', link: '/md/frame/netty/11-对象池技术.md'},
-                {text: 'Netty零拷贝技术', link: '/md/frame/netty/12-Netty零拷贝技术.md'},
+                // {text: '对象池技术', link: '/md/frame/netty/11-对象池技术.md'},
+                // {text: 'Netty零拷贝技术', link: '/md/frame/netty/12-Netty零拷贝技术.md'},
             ]
         }
     ]
@@ -607,13 +610,13 @@ function generateMybatisSidebar(){
     return [
         {
             // https://img.shields.io/badge/-Hibernate-59666C?logo=Hibernate&logoColor=FFF
-            text: iconText('Mybatis', '', 'FFF', 'Mybatis', '59666C'),
+            text: iconText('Mybatis', 'MyBatis', 'FFF', 'MyBatis', '59666C'),
             items: [
-                {text: '配置', link: '/md/frame/mybatis/02-配置'},
-                {text: 'XML映射器', link: '/md/frame/mybatis/03-XML映射器'},
-                {text: '动态SQL', link: '/md/frame/mybatis/04-动态SQL'},
-                {text: 'SQL语句构建器', link: '/md/frame/mybatis/05-SQL语句构建器'},
-                {text: '缓存', link: '/md/frame/mybatis/06-缓存'},
+                // {text: '配置', link: '/md/frame/mybatis/02-配置'},
+                // {text: 'XML映射器', link: '/md/frame/mybatis/03-XML映射器'},
+                // {text: '动态SQL', link: '/md/frame/mybatis/04-动态SQL'},
+                // {text: 'SQL语句构建器', link: '/md/frame/mybatis/05-SQL语句构建器'},
+                // {text: '缓存', link: '/md/frame/mybatis/06-缓存'},
             ]
         }
     ]
@@ -635,7 +638,8 @@ function generateExpLogSidebar(){
 function generateMySQLSidebar(){
     return [
         {
-            text: 'MySQL',
+            // https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=fff)
+            text: iconText('MySQL', 'MySQL', 'fff', 'mysql', '4479A1'),
             items: [
                 {text: 'MySQL体系结构', link: '/md/component/mysql/01-MySQL体系结构'},
                 {text: 'InnoDB存储引擎', link: '/md/component/mysql/02-InnoDB存储引擎'},
@@ -649,8 +653,10 @@ function generateMySQLSidebar(){
 
 function generateCMDSidebar(){
     return [
-        {text:'Linux', link:'/md/cmd/01-Linux常用命令'},
-        {text:'Git', link:'/md/cmd/02-Git常用命令'},
+        // https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black
+        // https://img.shields.io/badge/Git-F05032?logo=git&logoColor=fff
+        {text:iconSvg('Linux', 'linux', 'black', 'Linux-FCC624'), link:'/md/cmd/01-Linux常用命令'},
+        {text:iconSvg('Git', 'git', 'fff', 'Git-F05032'), link:'/md/cmd/02-Git常用命令'},
     ]
 }
 
@@ -662,10 +668,27 @@ function generateNginxSidebar(){
 
 function generateRedisSidebar(){
     return [
-        {text:'Redis整体结构',link:'/md/component/redis/01-Redis整体结构分析'},
-        {text:'数据结构与数据类型',link:'/md/component/redis/02-数据结构及数据类型'},
-        {text:'内存管理',link:'/md/component/redis/03-内存管理'},
-        {text:'持久化',link:'/md/component/redis/04-持久化'},
+        //https://img.shields.io/badge/Redis-%23DD0031.svg?logo=redis&logoColor=white
+        {
+            text: iconSvg('Redis', 'redis', 'white', 'Redis-%23DD0031.svg'),
+            items: [
+                {text:'Redis整体结构',link:'/md/component/redis/01-Redis整体结构分析'},
+                {text:'数据结构与数据类型',link:'/md/component/redis/02-数据结构及数据类型'},
+                {text:'内存管理',link:'/md/component/redis/03-内存管理'},
+                {text:'持久化',link:'/md/component/redis/04-持久化'},
+            ]
+        },
+
     ]
 }
+// https://github.com/inttter/md-badges
+// https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=fff
+// https://img.shields.io/badge/Kubernetes-326CE5?logo=kubernetes&logoColor=fff
+// https://img.shields.io/badge/Electron-47848F?logo=electron&logoColor=fff
+// https://img.shields.io/badge/Three.js-000?logo=threedotjs&logoColor=fff
+// https://img.shields.io/badge/Node.js-6DA55F?logo=node.js&logoColor=white
+// https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black
+// https://img.shields.io/badge/Go-%2300ADD8.svg?&logo=go&logoColor=white
+// https://img.shields.io/badge/LeetCode-000000?logo=LeetCode&logoColor=#d16c06
+// https://img.shields.io/badge/Git-F05032?logo=git&logoColor=fff
 export default sidebar
